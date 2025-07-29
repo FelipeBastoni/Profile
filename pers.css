@@ -40,7 +40,7 @@ p{
 
             padding-top: 1.5%;
             text-align: center;
-            width: 25%;
+            width: 10%;
             height: 100%;
             border-bottom: 1px solid white;
             background-color: rgb(43, 43, 43);
@@ -66,10 +66,14 @@ p{
 
             padding-top: 1.3%;
             text-align: center;
-            width: 25%;
+            width: 40%;
             height: 100%;
             border-bottom: 1px solid white;
             background-color: rgb(43, 43, 43);
+            background-image: linear-gradient(to left, rgb(43, 43, 43) 50%,  rgb(38, 36, 36) 50%);
+            background-size: 200% 100%;
+            background-position: right;
+            transition: background-position 0.5s ease;
 
         }
 
@@ -91,7 +95,6 @@ p{
             position: relative;
             width: 100%;
             height: 30%;
-          
 
 
         }
@@ -118,7 +121,7 @@ p{
 
             .logo span:nth-child(1){
 
-                left: 25%; 
+                left: 32%; 
                 top: 0;
 
             }
@@ -133,7 +136,7 @@ p{
 
             .logo span:nth-child(3){
             
-                left: 15%;
+                left: 25%;
                 top: 26px;
             
             }
@@ -166,25 +169,42 @@ p{
             }
 
 
+            .itnslg.ativo{
+
+                background-position: left;
+
+            }
+
+
 
 
     .contato{
 
         display: none;
-        top: 15%;
-        left: 40%;
+        top: 10%;
+        left: 0;
         z-index: 1000;
-        min-width: 400px;
-        min-height: 600px;
-        position: fixed;    
+        min-width: 100vw;
+        min-height: 100vh;
+        position: fixed;       
         justify-content: center;
         align-items: center;
+        background-color: #4f3535a7;
+
+    }
+
+    .boxcntatc{
+
+        padding-top: 2%;
+        margin-top: 3%;
+        margin-left: 30%;
+        text-align: center;
+        width: 40%;
+        height: 70%;
         background-color: rgb(44, 30, 30);
         border: 1px solid #5c4040;
 
     }
-
-
 
 
 
@@ -209,7 +229,8 @@ p{
         }
 
             .bx{
-
+                
+                padding-top: 4%;
                 padding-left: 1%;
 
             }
