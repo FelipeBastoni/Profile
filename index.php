@@ -22,7 +22,7 @@
 <div class="topo">
 
 
-    <div class="itnslg" onclick=anim()>
+    <div class="itnslg" id="lg1" onclick=anim()>
 
     
         <div class="logo" id="lg">
@@ -54,7 +54,7 @@
 
 
 
-    <div class="itns">
+    <div class="itns" onclick="modal()">
 
         <p>Entre em Contato</p>
 
@@ -70,10 +70,13 @@
 
 
 
-    <div class="contato">
+    <div class="contato" id="md" onclick="modal()">
 
-        <p>olá isso tem q ficar acima de todo resto</p>
+        <div class="boxcntatc" onclick="event.stopPropagation()">
 
+            <p>olá isso tem q ficar acima de todo resto</p>
+
+        </div>
 
     </div>
     
