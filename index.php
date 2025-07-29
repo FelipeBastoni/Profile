@@ -71,6 +71,15 @@
 
         <div class="boxcntatc" onclick="event.stopPropagation()">
 
+            <div class="fech" onclick="modal()">
+
+            <p>X</p>
+
+            </div>
+
+            <br>
+            <br>
+
             <p>olá isso tem q ficar acima de todo resto</p>
 
         </div>
