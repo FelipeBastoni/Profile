@@ -1,0 +1,278 @@
+
+
+
+*{
+
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+
+
+}
+
+p{
+
+    color: white;
+
+}
+
+
+    .topo{
+
+
+        width: 100vw;
+        height: 10vh; 
+        position: fixed;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+
+        }
+    
+    
+
+        .itnsblank{  
+
+            padding-top: 1.5%;
+            text-align: center;
+            width: 25%;
+            height: 100%;
+            border-bottom: 1px solid white;
+            background-color: rgb(43, 43, 43);
+            
+
+        }
+
+
+        .itns{  
+
+            padding-top: 1.5%;
+            text-align: center;
+            width: 25%;
+            height: 100%;
+            border-bottom: 1px solid white;
+            background-color: rgb(43, 43, 43);
+            
+
+        }
+        
+
+        .itnslg{  
+
+            padding-top: 1.3%;
+            text-align: center;
+            width: 25%;
+            height: 100%;
+            border-bottom: 1px solid white;
+            background-color: rgb(43, 43, 43);
+
+        }
+
+        .itns:hover{ 
+
+            cursor: pointer;
+            background-color: rgb(38, 36, 36);
+
+        }
+
+        .itnslg:hover{
+            
+            cursor: pointer;
+
+        }
+
+        .logo{
+                
+            position: relative;
+            width: 100%;
+            height: 30%;
+          
+
+
+        }
+
+            .logo span{
+
+                margin-left: 5%;
+                position: absolute;
+                width: 150px;
+                height: 4px;
+                background: #ffffff;
+                transition: all 0.3s ease;
+                transform-origin: center    ;
+                left: 50%;
+
+            }
+
+            .logo span:hover{
+
+                cursor: pointer;
+
+            }
+
+
+            .logo span:nth-child(1){
+
+                left: 25%; 
+                top: 0;
+
+            }
+
+
+            .logo span:nth-child(2){
+            
+                left: 40%; 
+                top: 13px;
+            
+            }
+
+            .logo span:nth-child(3){
+            
+                left: 15%;
+                top: 26px;
+            
+            }
+
+            .logo.ativo span:nth-child(1){
+
+                left: 0;
+                top: 15px;
+                width: 50px;
+                transform: rotate(45deg);
+
+            }
+
+            .logo.ativo span:nth-child(2){
+
+                left: 0;
+                width: 1%;
+                opacity: 0;
+
+            }
+
+
+            .logo.ativo span:nth-child(3){
+
+                left: 0;
+                width: 50px;
+                top: 15px;
+                transform: rotate(-45deg);
+
+            }
+
+
+
+
+    .contato{
+
+        display: none;
+        top: 15%;
+        left: 40%;
+        z-index: 1000;
+        min-width: 400px;
+        min-height: 600px;
+        position: fixed;    
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(44, 30, 30);
+        border: 1px solid #5c4040;
+
+    }
+
+
+
+
+
+
+
+    .corp{
+
+        max-width: 100vw;
+        min-height: 100vh; 
+
+    }
+
+
+        .cnt{
+
+            width: 100%;
+            height: 60%;
+            background-color: rgb(70, 70, 70);
+            padding-top: 2%;
+            border-left: 2px solid white;
+
+        }
+
+            .bx{
+
+                padding-left: 1%;
+
+            }
+
+
+        .cnt2box{
+
+            width: 100%;
+            height: 65%;
+            display: flex;
+
+        }
+
+
+
+
+
+
+        .cnt1{
+
+            width: 70%;
+            background-color:rgb(99, 94, 94);
+            border: 1px solid white;
+
+        }
+
+            .bx1{
+
+                padding-top: 2%;
+                padding-left: 2%;
+
+            }
+
+
+
+        .cnt2{
+
+            background-color: rgb(143, 143, 143);
+            border: 1px solid white;
+
+        }
+
+            .bx2{
+
+                padding-top: 2%;
+                padding-left: 2%;
+
+            }
+
+
+
+        .cnt3{
+
+            width: 100%;
+            height: 100%;
+            background-color: rgb(128, 127, 126);
+            border: 1px solid white;
+            
+        }
+
+            .bx3{
+
+                padding-top: 2%;
+                padding-left: 2%;
+
+            }
