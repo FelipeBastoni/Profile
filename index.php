@@ -34,13 +34,6 @@
     </div>
 
 
-    <div class="itnsblank">
-
-    </div>
-
-
-
-
 
     <div class="itns">
     
@@ -72,17 +65,31 @@
         <div class="boxcntatc" onclick="event.stopPropagation()">
 
             <div class="fech" onclick="modal()">
-
-            <p>X</p>
-
+                <p>X</p>
             </div>
 
             <br>
             <br>
 
-            <p>olá isso tem q ficar acima de todo resto</p>
+            <div class="txtcontato">
+
+                <h2>Contacte-nos</h2>
+    
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <a href="mailto:felipebertaobastoni@gmail.com">E-mail</a>
+            <br>
+            <br>
+            <a href="">oi</a>
+
 
         </div>
+
 
     </div>
     
