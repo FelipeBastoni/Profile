@@ -19,7 +19,7 @@
 <div class="topo">
 
 
-    <div class="itnslg" id="lg1" onclick=anim()>
+    <div class="itnslg" id="lg1" onclick="anim(), alternarPainel()">
 
     
         <div class="logo" id="lg">
@@ -99,7 +99,11 @@
 <div class="corp">
 
 
+    <div class="painel" id="painel">
 
+        <h2>OLAAAAA</h2>
+
+    </div>
 
 
 

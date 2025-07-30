@@ -14,3 +14,10 @@ function modal(){
     modal.style.display = mdativo ? 'none' : 'block';
 
 }
+
+
+function alternarPainel() {
+
+    document.getElementById("painel").classList.toggle("ativo");
+    
+}
