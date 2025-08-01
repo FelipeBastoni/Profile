@@ -69,23 +69,35 @@
             </div>
 
             <br>
-            <br>
 
             <div class="txtcontato">
 
                 <h2>Contacte-nos</h2>
     
+                <br>
+                <br>
+                <br>
+                <p>E-mail:</p>
+                <br>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felipebertaobastoni@gmail.com">felipebertaobastoni@gmail.com</a>
+             
+                <br>
+                <br>
+                <br>
+                <p>Whatsapp:</p>
+                <br>
+                <a href="https://wa.me/5519991898099" target="_blank" rel="noopener noreferrer">(19) 99189-8099</a>
+
+                <br>
+                <br>
+                <br>
+                <p>Linkedin:</p>
+                <br>
+                <a href="https://www.linkedin.com/in/felipe-bert%C3%A3o-bastoni" target="_blank">Felipe Bertão Bastoni</a>
+                <br>
+
+
             </div>
-
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <a href="mailto:felipebertaobastoni@gmail.com">E-mail</a>
-            <br>
-            <br>
-            <a href="">oi</a>
 
 
         </div>
@@ -101,7 +113,46 @@
 
     <div class="painel" id="painel">
 
-        <h2>OLAAAAA</h2>
+        <div class="paineltxt">
+
+            <h2>Menu</h2>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <p>AltT Corp</p>
+
+
+        </div>
 
     </div>
 

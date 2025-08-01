@@ -10,8 +10,8 @@ function anim(){
 function modal(){
 
     const modal = document.getElementById('md');
-    const mdativo = modal.style.display === 'block';
-    modal.style.display = mdativo ? 'none' : 'block';
+    modal.classList.toggle('ativo');
+  
 
 }
 
@@ -21,3 +21,10 @@ function alternarPainel() {
     document.getElementById("painel").classList.toggle("ativo");
     
 }
+
+
+document.addEventListener("keydown", function(e) {
+    if (e.altKey && e.key === "t") {
+        alert("AltT !");
+    }
+});
