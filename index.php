@@ -128,7 +128,7 @@
             <br>
             <br>
             <br>
-            <br>
+            <br>    
             <br>
             <br>
             <br>
@@ -162,7 +162,14 @@
 
         <div class="bx">
 
-            <p>Novidades:</p>
+            <h3>Novidades:</h3>
+
+            <div class="cntbxcont">
+
+                
+
+            </div>
+
 
         </div>
 
@@ -176,7 +183,10 @@
 
                 <div class="bx1">
 
-                    <p>Links de playlists:</p>
+                    <h3>Links de coisas:</h3>
+                    <br>
+                    <br>
+                    <a href="https://wplace.live/?lat=-22.19188065859941&lng=-46.751748378222665&zoom=12.838582002820917">Wplace Pinhal</a>
 
                 </div>
 
@@ -187,7 +197,7 @@
 
             <div class="bx2">
 
-                <p>Links de coisas:</p>
+                <h3>Links de playlists:</h3>
 
             </div>
 
@@ -202,7 +212,10 @@
 
         <div class="bx3">
 
-        <p>D'daily Interection</p>
+        <h3>D'daily Interection</h3>
+
+        <h3>Album de Fotos</h3>
+
 
         </div>
 
