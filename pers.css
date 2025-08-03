@@ -267,9 +267,13 @@ p, h2, h3, a, i{
 
             .cntbxcont{
 
+                display: flex;
+                flex-direction: column;
                 margin-left: -6%;
                 margin-top: 2.5%;
-                height: 53vh;
+                overflow-y: auto;
+                height: auto;
+                max-height: 53vh;
                 width: 39%;
                 background-color: white;
                 border-radius: 10px;
@@ -282,7 +286,8 @@ p, h2, h3, a, i{
                         border: 1px solid white;
                         border-top-right-radius: 10px;
                         border-top-left-radius: 10px;
-                        height: 20%;
+                        flex: 1;
+                        padding-bottom: 7%;
                         width: 100%;
                         
 
@@ -294,7 +299,8 @@ p, h2, h3, a, i{
                     border: 1px solid white;
                     border-bottom-left-radius: 10px;
                     border-bottom-right-radius: 10px;
-                    height: 20%;
+                    flex: 1;
+                    padding-bottom: 7%;
                     width: 100%;
                     
 
@@ -304,7 +310,8 @@ p, h2, h3, a, i{
                 .opt{
 
                     border: 1px solid white;
-                    height: 20%;
+                    flex: 1;
+                    padding-bottom: 7%;
                     width: 100%;
                     
 

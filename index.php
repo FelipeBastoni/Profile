@@ -1,3 +1,44 @@
+
+<?php
+
+function create_option(){
+
+    echo'
+    
+        <div class="opt" onclick="action()">
+
+            <p>Eae</p>
+        
+        </div>
+        
+        
+        ';
+
+}
+
+
+
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -164,7 +205,7 @@
 
             <h3>Novidades:</h3>
 
-                <div class="cntbxcont" id="contselector" onclick=action()>
+                <div class="cntbxcont" id="contselector"    >
 
                     <div class="optop">
                         <p>Opção 1</p>
@@ -182,10 +223,30 @@
                         <p>Opção 4</p>
                     </div>    
 
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+                    <?php create_option(); ?>
+
+
                     <div class="optbottom">
                         <p>Opção 5</p>
                     </div>    
 
+                    
 
                 </div>
 
