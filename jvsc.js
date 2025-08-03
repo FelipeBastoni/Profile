@@ -15,6 +15,19 @@ function modal(){
 
 }
 
+function action(){
+
+    fetch("content.php")
+        .then(response => response.text())
+        .then(data => { 
+            
+            document.getElementById('bxcont').innerHTML = data;
+
+        });
+        
+}
+
+
 
 function alternarPainel() {
 

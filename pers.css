@@ -266,10 +266,49 @@ p, h2, h3, a, i{
                 height: 53vh;
                 width: 39%;
                 background-color: white;
-                border: 3px solid white;
                 border-radius: 10px;
 
             }
+            
+            
+                .optop{
+
+                        border: 1px solid black;
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                        height: 20%;
+                        width: 100%;
+                        
+
+                    }
+
+
+                .optbottom{
+
+                    border: 1px solid black;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    height: 20%;
+                    width: 100%;
+                    
+
+                }
+
+
+                .opt{
+
+                    border: 1px solid black;
+                    height: 20%;
+                    width: 100%;
+                    
+
+                }
+
+                .opt, .optbottom, .optop, p{
+
+                    color: black;
+
+                }
 
             .bxcont{
 

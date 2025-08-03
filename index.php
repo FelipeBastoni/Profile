@@ -164,16 +164,34 @@
 
             <h3>Novidades:</h3>
 
-            <div class="cntbxcont">
+                <div class="cntbxcont" id="contselector" onclick=action()>
 
-                
+                    <div class="optop">
+                        <p>Opção 1</p>
+                    </div>    
 
-            </div>
+                    <div class="opt">
+                        <p>Opção 2</p>
+                    </div>    
 
-            <div class="bxcont">
+                    <div class="opt">
+                        <p>Opção 3</p>
+                    </div>    
+
+                    <div class="opt">
+                        <p>Opção 4</p>
+                    </div>    
+
+                    <div class="optbottom">
+                        <p>Opção 5</p>
+                    </div>    
 
 
-                <p>Aqui terá o conteudo Selecionado no box branco</p>
+                </div>
+
+            <div class="bxcont" id="bxcont">
+
+
 
 
             </div>
