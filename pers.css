@@ -254,20 +254,32 @@ p, h2, h3, a, i{
             .bx{
                 
                 padding-top: 4%;
-                padding-left: 1%;
+                padding-left: 1%;   
+                display: flex;
 
             }
 
             .cntbxcont{
 
-                margin-top: 1%;
+                margin-left: -6%;
+                margin-top: 2.5%;
                 height: 53vh;
-                width: 40%;
+                width: 39%;
                 background-color: white;
                 border: 3px solid white;
                 border-radius: 10px;
 
             }
+
+            .bxcont{
+
+                padding-left: 5%;
+                height: 80vh;
+                width: 60%;
+
+            }
+
+
 
 
 

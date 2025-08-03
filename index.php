@@ -170,6 +170,15 @@
 
             </div>
 
+            <div class="bxcont">
+
+
+                <p>Aqui terá o conteudo Selecionado no box branco</p>
+
+
+            </div>
+
+
 
         </div>
 
