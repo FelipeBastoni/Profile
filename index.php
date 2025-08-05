@@ -1,13 +1,41 @@
 
 <?php
 
+session_start();
+
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "test";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+$sql = "SELECT FOTO from posts where ID = 0";
+$result = $conn->query($sql);
+
+
+
+
+while($row = $result->fetch_assoc()){
+
+    $_SESSION['foto'] = $row['FOTO'];    
+
+}
+
+
+
+
 function create_option(){
 
-    echo'
+
     
-        <div class="opt" onclick="action()">
+    echo'
+                                        
+        <div class="opt" onclick="action(\'' . $_SESSION['foto'] . '\')">
 
             <p>Eae</p>
+
         
         </div>
         
@@ -20,6 +48,7 @@ function create_option(){
 
 
 
+$conn->close();
 
 
 ?>

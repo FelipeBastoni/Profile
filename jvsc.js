@@ -15,17 +15,28 @@ function modal(){
 
 }
 
-function action(){
+function action(x){
 
     fetch("content.php")
         .then(response => response.text())
         .then(data => { 
             
-            document.getElementById('bxcont').innerHTML = data;
+            const conta = document.getElementById('bxcont');
+            conta.innerHTML = data;
+
+            const imag = document.createElement('img');
+            imag.src = x;
+
+            conta.appendChild(imag);
+
 
         });
         
+
+
+
 }
+
 
 
 

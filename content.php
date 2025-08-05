@@ -18,5 +18,7 @@ php
 Copiar
 Editar
 <?php
-echo "Texto vindo do PHP";
-?> -->
+echo "Texto vindo do PHP
+
+
+?>
