@@ -280,31 +280,6 @@ p, h2, h3, a, i{
 
             }
             
-            
-                .optop{
-
-                        border: 1px solid white;
-                        border-top-right-radius: 10px;
-                        border-top-left-radius: 10px;
-                        flex: 1;
-                        padding-bottom: 7%;
-                        width: 100%;
-                        
-
-                    }
-
-
-                .optbottom{
-
-                    border: 1px solid white;
-                    border-bottom-left-radius: 10px;
-                    border-bottom-right-radius: 10px;
-                    flex: 1;
-                    padding-bottom: 7%;
-                    width: 100%;
-                    
-
-                }
 
 
                 .opt{
@@ -317,7 +292,8 @@ p, h2, h3, a, i{
 
                 }
 
-                    .opt, .optbottom, .optop, p{
+
+                    .opt, p{
 
                         padding-left: 0.5%;
                         padding-top: 0.5%;
@@ -326,13 +302,16 @@ p, h2, h3, a, i{
                     }
 
                     
-                    .opt:hover, .optbottom:hover, .optop:hover{
+                    .opt:hover{
 
                         border-color: rgb(220, 220, 220);
                         background-color: rgb(210, 210, 210);
                         cursor: pointer;
 
                     }
+
+
+                
 
 
 

@@ -1,8 +1,6 @@
 
 <?php
 
-session_start();
-
 
 $servername = "localhost";
 $username = "root";
@@ -11,38 +9,59 @@ $dbname = "test";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = "SELECT FOTO from posts where ID = 0";
+$sql = "SELECT * from posts";
 $result = $conn->query($sql);
 
 
+if ($result->num_rows > 0) {
 
+    while($row = $result->fetch_assoc()){
 
-while($row = $result->fetch_assoc()){
+        $novidades[] = new Novidade( $row['TEXTO'], $row['FOTO'], $row['EXTRA'], $row['NUMERO']);    
 
-    $_SESSION['foto'] = $row['FOTO'];    
+    }
 
 }
 
 
+class Novidade {
+
+    public $txt;
+    public $ft;
+    public $extra;
+    public $numero;
 
 
-function create_option(){
+    public function __construct($txt, $ft, $extra, $numero){
+
+        $this->txt = $txt;
+        $this->ft = $ft;
+        $this->extra = $extra;
+        $this->numero = $numero;
+
+    }
 
 
-    
-    echo'
+    public function novidades(){
+
+        echo' 
                                         
-        <div class="opt" onclick="action(\'' . $_SESSION['foto'] . '\')">
+        <div class="opt" onclick="action(\'' . $this->ft . '\', \''.$this->txt.'\')">
 
-            <p>Eae</p>
-
+            <p>'.$this->extra.'
         
         </div>
         
         
         ';
 
+
+
+
+    }
+
 }
+
 
 
 
@@ -234,48 +253,31 @@ $conn->close();
 
             <h3>Novidades:</h3>
 
-                <div class="cntbxcont" id="contselector"    >
-
-                    <div class="optop">
-                        <p>Opção 1</p>
-                    </div>    
-
-                    <div class="opt">
-                        <p>Opção 2</p>
-                    </div>    
-
-                    <div class="opt">
-                        <p>Opção 3</p>
-                    </div>    
-
-                    <div class="opt">
-                        <p>Opção 4</p>
-                    </div>    
-
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
-                    <?php create_option(); ?>
+                <div class="cntbxcont" id="contselector">
 
 
-                    <div class="optbottom">
-                        <p>Opção 5</p>
-                    </div>    
-
+                    <?php    
                     
+                        global $novidades;
+
+                        $nt = count($novidades);
+                    
+                        $n = 0;
+
+
+                        while($n<$nt){
+
+                            
+                            $novidades[$n]->novidades();
+
+ 
+                            $n++;
+
+                        }
+                    
+                    
+                    ?>
+
 
                 </div>
 

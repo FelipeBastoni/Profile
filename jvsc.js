@@ -15,27 +15,27 @@ function modal(){
 
 }
 
-function action(x){
+function action(x,y){
 
-    fetch("content.php")
-        .then(response => response.text())
-        .then(data => { 
-            
-            const conta = document.getElementById('bxcont');
-            conta.innerHTML = data;
+    
+    const conta = document.getElementById('bxcont');
 
-            const imag = document.createElement('img');
-            imag.src = x;
+    conta.innerHTML = y;
 
-            conta.appendChild(imag);
+    const imag = document.createElement('img');
+    imag.src = x;
+    imag.style.height = "300px";
+    imag.style.width = "auto";
 
 
-        });
+    conta.appendChild(imag);
+    conta.classList.add("ativo");
+
+    }
+
+
         
 
-
-
-}
 
 
 
