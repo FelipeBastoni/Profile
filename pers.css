@@ -321,8 +321,19 @@ p, h2, h3, a, i{
                 padding-left: 5%;
                 height: 80vh;
                 width: 60%;
+                display: flex;
 
             }
+
+                .contnovidade{
+
+                    max-height: 60vh;             
+                    max-width: 35%;       
+                    height: auto;
+                    width: auto;
+                    margin-left: auto;
+
+                }
 
 
 

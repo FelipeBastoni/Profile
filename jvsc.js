@@ -24,11 +24,14 @@ function action(x,y){
 
     const imag = document.createElement('img');
     imag.src = x;
-    imag.style.height = "300px";
-    imag.style.width = "auto";
+    imag.style.height = "100%";
+    imag.style.width = "100%";
 
+    const dev = document.createElement('div');
+    dev.classList = "contnovidade";
 
-    conta.appendChild(imag);
+    conta.appendChild(dev);
+    dev.appendChild(imag)
     conta.classList.add("ativo");
 
     }
