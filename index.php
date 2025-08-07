@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()){
 
-        $novidades[] = new Novidade( $row['TEXTO'], $row['FOTO'], $row['EXTRA'], $row['NUMERO']);    
+        $novidades[] = new Novidade($row['TITULO_P'], $row['DESCRICAO'], $row['TITULO_T'], $row['TEXTO'], $row['FOTO'], $row['EXTRA'], $row['NUMERO']);    
 
     }
 
@@ -26,14 +26,20 @@ if ($result->num_rows > 0) {
 
 class Novidade {
 
+    public $titulo_p;
+    public $descricao;
+    public $titulo_t;
     public $txt;
     public $ft;
     public $extra;
     public $numero;
 
 
-    public function __construct($txt, $ft, $extra, $numero){
+    public function __construct($titulo_p, $descricao, $titulo_t, $txt, $ft, $extra, $numero){
 
+        $this->titulo_p = $titulo_p;
+        $this->descricao = $descricao;
+        $this->titulo_t = $titulo_t;
         $this->txt = $txt;
         $this->ft = $ft;
         $this->extra = $extra;
@@ -46,10 +52,11 @@ class Novidade {
 
         echo' 
                                         
-        <div class="opt" onclick="action(\'' . $this->ft . '\', \''.$this->txt.'\')">
+        <div class="opt" onclick="action(\'' . $this->ft . '\', \''.$this->txt.'\',  \''.$this->titulo_t.'\')">
 
-            <p>'.$this->extra.'
-        
+            <h2>'.$this->titulo_p.'</h2>
+            <p>'.$this->descricao.'</p>
+
         </div>
         
         

@@ -15,12 +15,22 @@ function modal(){
 
 }
 
-function action(x,y){
+function action(x,y,z){
 
-    
+
     const conta = document.getElementById('bxcont');
 
-    conta.innerHTML = y;
+    conta.innerHTML = "";
+
+    const diiv = document.createElement('div');
+
+    const title = document.createElement('h2');
+    title.innerText = z;
+
+    const br = document.createElement('br');
+
+    const txt = document.createElement('p');
+    txt.innerText = y;
 
     const imag = document.createElement('img');
     imag.src = x;
@@ -30,8 +40,19 @@ function action(x,y){
     const dev = document.createElement('div');
     dev.classList = "contnovidade";
 
+
+
+    conta.appendChild(diiv);
+
+    diiv.appendChild(title);
+    diiv.appendChild(br);
+    diiv.appendChild(txt);
+
+
     conta.appendChild(dev);
-    dev.appendChild(imag)
+    dev.appendChild(imag);
+    
+    
     conta.classList.add("ativo");
 
     }
