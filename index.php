@@ -104,7 +104,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tavern</title>
+    <title>AltT</title>
 
     <link rel="stylesheet" href="pers.css">
     <script src="jvsc.js"></script>
@@ -134,9 +134,9 @@ $conn->close();
 
 
 
-    <div class="itns">
+    <div class="itns" onclick="fff()">
     
-        <p onclick="fff()">Perfil no Github</p>
+        <p>Perfil no Github</p>
 
 
     </div>
@@ -248,7 +248,7 @@ $conn->close();
             <br>
             <br>
 
-            <p>AltT Corp</p>
+            <p>AltT ltda</p>
 
 
         </div>
@@ -321,7 +321,7 @@ $conn->close();
                     <a href="https://convertio.co/pt/">Conversor de Arquivos</a>
                     <br>
                     <br>
-                    
+                    <a href="https://www.decolar.com/">Site da Decolar</a>
 
 
                 </div>
