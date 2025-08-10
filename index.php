@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()){
 
-        $novidades[] = new Novidade($row['TITULO_P'], $row['DESCRICAO'], $row['TITULO_T'], $row['TEXTO'], $row['FOTO'], $row['EXTRA'], $row['NUMERO']);    
+        $novidades[] = new Novidade($row['TITULO_P'], $row['DESCRICAO'], $row['TITULO_T'], $row['TEXTO'], $row['FOTO'], $row['EXTRA'], $row['NUMERO'], $row['ID']);    
 
     }
 
@@ -33,9 +33,10 @@ class Novidade {
     public $ft;
     public $extra;
     public $numero;
+    public $id;
 
 
-    public function __construct($titulo_p, $descricao, $titulo_t, $txt, $ft, $extra, $numero){
+    public function __construct($titulo_p, $descricao, $titulo_t, $txt, $ft, $extra, $numero, $id){
 
         $this->titulo_p = $titulo_p;
         $this->descricao = $descricao;
@@ -44,6 +45,8 @@ class Novidade {
         $this->ft = $ft;
         $this->extra = $extra;
         $this->numero = $numero;
+        $this->id = $id;
+
 
     }
 
@@ -52,7 +55,7 @@ class Novidade {
 
         echo' 
                                         
-        <div class="opt" onclick="action(\'' . $this->ft . '\', \''.$this->txt.'\',  \''.$this->titulo_t.'\')">
+        <div class="opt" onclick="action(\'' . $this->id . '\',\'' . $this->ft . '\', \''.$this->txt.'\',  \''.$this->titulo_t.'\')">
 
             <h2>'.$this->titulo_p.'</h2>
             <p>'.$this->descricao.'</p>
@@ -313,6 +316,13 @@ $conn->close();
                     <br>
                     <br>
                     <a href="https://wplace.live/?lat=-22.19188065859941&lng=-46.751748378222665&zoom=12.838582002820917">Wplace Pinhal</a>
+                    <br>
+                    <br>
+                    <a href="https://convertio.co/pt/">Conversor de Arquivos</a>
+                    <br>
+                    <br>
+                    
+
 
                 </div>
 

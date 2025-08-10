@@ -1,3 +1,8 @@
+
+let v = -1;
+
+
+
 function fff(){ window.location.href="https://github.com/FelipeBastoni"; }
 
 function anim(){
@@ -15,51 +20,64 @@ function modal(){
 
 }
 
-function action(x,y,z){
+function action(w,x,y,z){
 
 
     const conta = document.getElementById('bxcont');
 
-    conta.innerHTML = "";
 
-    const diiv = document.createElement('div');
+    if (v == w){
 
-    const title = document.createElement('h2');
-    title.innerText = z;
+        conta.innerHTML = "";
 
-    const br = document.createElement('br');
+        v = -1;
 
-    const txt = document.createElement('p');
-    txt.innerText = y;
-
-    const imag = document.createElement('img');
-    imag.src = x;
-    imag.style.height = "100%";
-    imag.style.width = "100%";
-
-    const dev = document.createElement('div');
-    dev.classList = "contnovidade";
+    }else{
 
 
+        conta.innerHTML = "";
 
-    conta.appendChild(diiv);
+        const diiv = document.createElement('div');
 
-    diiv.appendChild(title);
-    diiv.appendChild(br);
-    diiv.appendChild(txt);
+        const title = document.createElement('h2');
+        title.innerText = z;
+
+        const br = document.createElement('br');
+
+        const txt = document.createElement('p');
+        txt.innerText = y;
+
+        const imag = document.createElement('img');
+        imag.src = x;
+        imag.style.height = "100%";
+        imag.style.width = "100%";
+
+        const dev = document.createElement('div');
+        dev.classList = "contnovidade";
 
 
-    conta.appendChild(dev);
-    dev.appendChild(imag);
-    
-    
-    conta.classList.add("ativo");
+
+        conta.appendChild(diiv);
+
+        diiv.appendChild(title);
+        diiv.appendChild(br);
+        diiv.appendChild(txt);
+
+
+        conta.appendChild(dev);
+        dev.appendChild(imag);
+        
+        
+        conta.classList.add("ativo");
+
+        v = w;
+
 
     }
 
 
         
-
+}
 
 
 
