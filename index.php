@@ -291,15 +291,8 @@ $conn->close();
 
                 </div>
 
-            <div class="bxcont" id="bxcont">
-
-
-
-
-            </div>
-
-
-
+            <div class="bxcont" id="bxcont"></div>
+            
         </div>
 
     </div>
@@ -307,22 +300,36 @@ $conn->close();
 
     <div class=cnt2box>
 
-
             <div class="cnt1">
 
                 <div class="bx1">
 
-                    <h3>Links de coisas:</h3>
-                    <br>
-                    <br>
-                    <a href="https://wplace.live/?lat=-22.19188065859941&lng=-46.751748378222665&zoom=12.838582002820917">Wplace Pinhal</a>
-                    <br>
-                    <br>
-                    <a href="https://convertio.co/pt/">Conversor de Arquivos</a>
-                    <br>
-                    <br>
-                    <a href="https://www.decolar.com/">Site da Decolar</a>
+                    <h3>Links de playlists:</h3>
 
+                    <div class="linksbx1">
+
+                        <a href="https://www.youtube.com/watch?v=Lc1Ll-euRSg&list=PLLkVMiSEs5fslGjVlOkkK4j7qfOg8Ode3">Men At Work</a>
+                
+                        <a href="https://www.youtube.com/watch?v=JRDgihVDEko&list=PLRVgFSDAD4puuuJ_PY1lV8Jbr4QbYTKEg">Dire Straits</a>
+                
+                        <a href="https://www.youtube.com/watch?v=ddzsgetrQyw&list=PLfqlpuz-LWL28EHinbSqNhj2nFZS-WQ-I">Metallica</a>
+
+                        <a href="https://www.youtube.com/watch?v=5_hIojjA3A4&list=PL93rs4Zu5DVhR54v_4bhbq7pbRENQ7Ql9">Korn</a>
+
+                        <a href="https://www.youtube.com/watch?v=kXYiU_JCYtU&list=PL9LkJszkF_Z6bJ82689htd2wch-HVbzCO">Linkin Park</a>
+                
+                        <a href="https://www.youtube.com/watch?v=hTWKbfoikeg&list=PLF1D793B61571DD4A">Nirvana</a>
+                
+                        <a href="https://www.youtube.com/watch?v=uAE6Il6OTcs&list=PLA27AEEF9709E8016">Alice In Chains</a>
+                
+                        <a href="https://www.youtube.com/watch?v=K8z8hLvjb_U&list=PLtfJT7Fg2lKXLksdwqftx0ZaQ2ilxWpEr">Radiohead</a>
+                
+                        <a href="https://www.youtube.com/watch?v=oVctwNqAUrs&list=PLPNKnwlz-OnZlnghYSZfudlnLGE6ww3nf">Mac DeMarco</a>
+                    
+                        <a href="https://www.youtube.com/watch?v=T_OWvLDIyno&list=PLgF5KLwzxU-1C0_hXVdeOUKP-UBx8_xvY">Kendrick Lamar</a>
+
+
+                    </div>
 
                 </div>
 
@@ -333,7 +340,21 @@ $conn->close();
 
             <div class="bx2">
 
-                <h3>Links de playlists:</h3>
+                <h3>Links de coisas:</h3>
+
+                <div class="linksbx2">
+                  
+                    <a href="https://wplace.live/?lat=-22.19188065859941&lng=-46.751748378222665&zoom=12.838582002820917">Wplace Pinhal</a>
+                    
+                    <a href="https://convertio.co/pt/">Conversor de Arquivos</a>
+                    
+                    <a href="https://www.decolar.com/">Site da Decolar</a>
+                    
+                    <a href="https://theuselessweb.com/">Surpreenda-se</a>
+                    
+                    <a href="https://www.w3schools.com/">W3schools</a>
+                
+                </div>
 
             </div>
 
