@@ -248,7 +248,7 @@ p, h2, h3, a, i{
         .cnt{
 
             width: 100%;
-            height: 75vh;
+            height: 65vh;
             background-color: rgb(70, 70, 70);
             padding-top: 2%;
             border-left: 2px solid white;
@@ -273,7 +273,7 @@ p, h2, h3, a, i{
                 margin-top: 2.5%;
                 overflow-y: auto;
                 height: auto;
-                max-height: 53vh;
+                max-height: 40vh;
                 width: 39%;
                 background-color: white;
                 border-radius: 10px;
@@ -288,6 +288,7 @@ p, h2, h3, a, i{
                     flex: 1;
                     padding-bottom: 7%;
                     width: 100%;
+                    max-height: 33.33333333333333%;
                     
 
                 }
@@ -330,7 +331,7 @@ p, h2, h3, a, i{
 
                 .contnovidade{
 
-                    max-height: 60vh;             
+                    max-height: 50vh;             
                     max-width: 35%;       
                     height: auto;
                     width: auto;
@@ -384,6 +385,7 @@ p, h2, h3, a, i{
     
                     padding-top: 2%;    
                     padding-left: 2%;
+                    width: fit-content;
 
                 }
 
@@ -417,6 +419,7 @@ p, h2, h3, a, i{
 
                     padding-top: 2.7%;
                     padding-left: 3%;
+                    width: fit-content;
 
                 }
 
@@ -436,6 +439,36 @@ p, h2, h3, a, i{
                 padding-left: 2%;
 
             }
+
+
+        .fm{
+
+            height: 90vh;
+            background-color: rgb(64, 62, 59);
+            border: 1px solid white;
+            display: flex;
+
+
+        }
+
+            .infos{
+
+                width: 40%;
+
+            }
+
+
+            .qm{
+
+                width: 70%;
+                height: 90vh;
+                border-left: 2px solid white;
+                padding-top: 2%;
+                padding-left: 2%;
+
+            }
+
+        
 
         .painel {
 
@@ -462,19 +495,25 @@ p, h2, h3, a, i{
                 padding-top: 3%;
                 padding-left: 3%;
 
-
             }
 
             .paineltxt>p{
 
                 padding-left: 2%;
                 padding-bottom: 4%;
+                width: fit-content;
 
             }
 
             .paineltxt>p:hover{
 
                 cursor: pointer;
+
+            }
+
+            .paineltxt>h2{
+
+                width: fit-content;
 
             }
 
@@ -488,7 +527,7 @@ p, h2, h3, a, i{
 
             .rz:hover{
 
-                cursor: default !important;
+                cursor: default  !important;
 
             }
 

@@ -214,14 +214,21 @@ $conn->close();
 
         <div class="paineltxt">
 
-            <h2>Menu</h2>
+            <h2 onclick="anim(), alternarPainel(), tp()">Menu</h2>
             
             <br>
+            <br>            
+            <p onclick="anim(), alternarPainel(), tp()">Novidades</p>
+            <p onclick="anim(), alternarPainel(), qms()">Quem Somos</p>
+            <p onclick="modal()">Nos Contate</p> 
             <br>
+            <br> 
             <p>Acesso do Desenvolvedor</p>
             <p onclick="rep()">Repositório do Modelo</p>
-            <p>Quem Somos</p>
-            <p onclick="modal()">Nos Contate</p>  
+
+
+
+
             
             
             <p class="rz">AltT ltda</p>
@@ -233,7 +240,7 @@ $conn->close();
 
 
 
-    <div class="cnt">
+    <div class="cnt" id="Nvd">
 
         <div class="bx">
 
@@ -274,7 +281,7 @@ $conn->close();
     </div>
 
 
-    <div class=cnt2box>
+    <div class="cnt2box">
 
             <div class="cnt1">
 
@@ -345,14 +352,29 @@ $conn->close();
 
         <div class="bx3">
 
-        <h3>D'daily Interection</h3>
-
-        <h3>Album de Fotos</h3>
+        <h3 id="Fts" >Álbum de Fotos</h3>
 
 
         </div>
 
     </div>
+
+    
+    <div class="fm">
+
+        <div class="infos"></div>
+
+        <div class="qm">
+
+            <h3 id="Qm">Quem Somos</h3>
+                            
+
+
+        </div>
+
+    </div>
+
+
 
 
 </div>

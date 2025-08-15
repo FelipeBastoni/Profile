@@ -97,3 +97,10 @@ document.addEventListener("keydown", function(e) {
         alert("AltT !");
     }
 });
+
+
+function qms(){document.getElementById('Qm').scrollIntoView({ behavior: 'smooth' })}
+
+function tp(){document.getElementById('Nvd').scrollIntoView({ behavior: 'smooth' })}
+
+
