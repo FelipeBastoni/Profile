@@ -5,6 +5,9 @@ let v = -1;
 
 function fff(){ window.location.href="https://github.com/FelipeBastoni"; }
 
+function rep(){ window.location.href="https://github.com/FelipeBastoni/Profile"; }
+
+
 function anim(){
 
     document.getElementById('lg').classList.toggle('ativo');

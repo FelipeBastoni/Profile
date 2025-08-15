@@ -215,40 +215,16 @@ $conn->close();
         <div class="paineltxt">
 
             <h2>Menu</h2>
-
+            
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>    
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <p>AltT ltda</p>
+            <p>Acesso do Desenvolvedor</p>
+            <p onclick="rep()">Repositório do Modelo</p>
+            <p>Quem Somos</p>
+            <p onclick="modal()">Nos Contate</p>  
+            
+            
+            <p class="rz">AltT ltda</p>
 
 
         </div>

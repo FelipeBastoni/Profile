@@ -464,3 +464,31 @@ p, h2, h3, a, i{
 
 
             }
+
+            .paineltxt>p{
+
+                padding-left: 2%;
+                padding-bottom: 4%;
+
+            }
+
+            .paineltxt>p:hover{
+
+                cursor: pointer;
+
+            }
+
+
+            .rz{
+
+                position: absolute;
+                bottom: 0;
+
+            }
+
+            .rz:hover{
+
+                cursor: default !important;
+
+            }
+
