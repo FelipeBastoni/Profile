@@ -178,7 +178,7 @@ $conn->close();
                 <br>
                 <p>E-mail:</p>
                 <br>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felipebertaobastoni@gmail.com">felipebertaobastoni@gmail.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=felipebertaobastoni@gmail.com" target="_blank">felipebertaobastoni@gmail.com</a>
              
                 <br>
                 <br>
@@ -291,25 +291,25 @@ $conn->close();
 
                     <div class="linksbx1">
 
-                        <a href="https://www.youtube.com/watch?v=Lc1Ll-euRSg&list=PLLkVMiSEs5fslGjVlOkkK4j7qfOg8Ode3">Men At Work</a>
+                        <a href="https://www.youtube.com/watch?v=Lc1Ll-euRSg&list=PLLkVMiSEs5fslGjVlOkkK4j7qfOg8Ode3" target="_blank">Men At Work</a>
                 
-                        <a href="https://www.youtube.com/watch?v=JRDgihVDEko&list=PLRVgFSDAD4puuuJ_PY1lV8Jbr4QbYTKEg">Dire Straits</a>
+                        <a href="https://www.youtube.com/watch?v=JRDgihVDEko&list=PLRVgFSDAD4puuuJ_PY1lV8Jbr4QbYTKEg" target="_blank">Dire Straits</a>
                 
-                        <a href="https://www.youtube.com/watch?v=ddzsgetrQyw&list=PLfqlpuz-LWL28EHinbSqNhj2nFZS-WQ-I">Metallica</a>
+                        <a href="https://www.youtube.com/watch?v=ddzsgetrQyw&list=PLfqlpuz-LWL28EHinbSqNhj2nFZS-WQ-I" target="_blank">Metallica</a>
 
-                        <a href="https://www.youtube.com/watch?v=5_hIojjA3A4&list=PL93rs4Zu5DVhR54v_4bhbq7pbRENQ7Ql9">Korn</a>
+                        <a href="https://www.youtube.com/watch?v=5_hIojjA3A4&list=PL93rs4Zu5DVhR54v_4bhbq7pbRENQ7Ql9" target="_blank">Korn</a>
 
-                        <a href="https://www.youtube.com/watch?v=kXYiU_JCYtU&list=PL9LkJszkF_Z6bJ82689htd2wch-HVbzCO">Linkin Park</a>
+                        <a href="https://www.youtube.com/watch?v=kXYiU_JCYtU&list=PL9LkJszkF_Z6bJ82689htd2wch-HVbzCO" target="_blank">Linkin Park</a>
                 
-                        <a href="https://www.youtube.com/watch?v=hTWKbfoikeg&list=PLF1D793B61571DD4A">Nirvana</a>
+                        <a href="https://www.youtube.com/watch?v=hTWKbfoikeg&list=PLF1D793B61571DD4A" target="_blank">Nirvana</a>
                 
-                        <a href="https://www.youtube.com/watch?v=uAE6Il6OTcs&list=PLA27AEEF9709E8016">Alice In Chains</a>
+                        <a href="https://www.youtube.com/watch?v=uAE6Il6OTcs&list=PLA27AEEF9709E8016" target="_blank">Alice In Chains</a>
                 
-                        <a href="https://www.youtube.com/watch?v=K8z8hLvjb_U&list=PLtfJT7Fg2lKXLksdwqftx0ZaQ2ilxWpEr">Radiohead</a>
+                        <a href="https://www.youtube.com/watch?v=K8z8hLvjb_U&list=PLtfJT7Fg2lKXLksdwqftx0ZaQ2ilxWpEr" target="_blank">Radiohead</a>
                 
-                        <a href="https://www.youtube.com/watch?v=oVctwNqAUrs&list=PLPNKnwlz-OnZlnghYSZfudlnLGE6ww3nf">Mac DeMarco</a>
+                        <a href="https://www.youtube.com/watch?v=oVctwNqAUrs&list=PLPNKnwlz-OnZlnghYSZfudlnLGE6ww3nf" target="_blank">Mac DeMarco</a>
                     
-                        <a href="https://www.youtube.com/watch?v=T_OWvLDIyno&list=PLgF5KLwzxU-1C0_hXVdeOUKP-UBx8_xvY">Kendrick Lamar</a>
+                        <a href="https://www.youtube.com/watch?v=T_OWvLDIyno&list=PLgF5KLwzxU-1C0_hXVdeOUKP-UBx8_xvY" target="_blank">Kendrick Lamar</a>
 
 
                     </div>
@@ -327,15 +327,15 @@ $conn->close();
 
                 <div class="linksbx2">
                   
-                    <a href="https://wplace.live/?lat=-22.19188065859941&lng=-46.751748378222665&zoom=12.838582002820917">Wplace Pinhal</a>
+                    <a href="https://wplace.live/?lat=-22.19188065859941&lng=-46.751748378222665&zoom=12.838582002820917" target="_blank">Wplace Pinhal</a>
                     
-                    <a href="https://convertio.co/pt/">Conversor de Arquivos</a>
+                    <a href="https://convertio.co/pt/" target="_blank">Conversor de Arquivos</a>
                     
-                    <a href="https://www.decolar.com/">Site da Decolar</a>
+                    <a href="https://www.decolar.com/" target="_blank">Site da Decolar</a>
                     
-                    <a href="https://theuselessweb.com/">Surpreenda-se</a>
+                    <a href="https://theuselessweb.com/" target="_blank">Surpreenda-se</a>
                     
-                    <a href="https://www.w3schools.com/">W3schools</a>
+                    <a href="https://www.w3schools.com/" target="_blank">W3schools</a>
                 
                 </div>
 
@@ -367,8 +367,16 @@ $conn->close();
         <div class="qm">
 
             <h3 id="Qm">Quem Somos</h3>
-                            
+                    
+            <p>Somos uma Start-up atualmente focada em criar aplicações web e sistemas de gestão, pretendemos também abrangir áreas como automação e implantação de dispositivos Iot's, visamos sempre entregar um serviço de qualidade, bons resultados, otimas melhorias e satisfação a nossos clientes, conte conosco para o seu negócio ou necessidade!</p>
 
+            <p>Nossa equipe é composta por...</p>
+
+            <p>Estamos localizados em...</p>
+
+            <p>Entre em contato conosco para um possível orçamento ou negociação</p>
+
+            <p onclick="modal()" class="contt">Entrar em contato</p>
 
         </div>
 

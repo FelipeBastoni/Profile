@@ -465,6 +465,28 @@ p, h2, h3, a, i{
                 border-left: 2px solid white;
                 padding-top: 2%;
                 padding-left: 2%;
+                padding-right: 5%;
+
+            }
+
+
+            .qm>p{
+
+                padding-left: 3%;
+                padding-top: 3%;
+
+
+            }
+
+            .contt{
+
+                width: fit-content;
+
+            }
+
+            .contt:hover{
+
+                cursor: pointer;
 
             }
 

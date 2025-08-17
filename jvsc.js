@@ -3,9 +3,9 @@ let v = -1;
 
 
 
-function fff(){ window.location.href="https://github.com/FelipeBastoni"; }
+function fff(){ window.open("https://github.com/FelipeBastoni", "_blank"); }
 
-function rep(){ window.location.href="https://github.com/FelipeBastoni/Profile"; }
+function rep(){ window.open("https://github.com/FelipeBastoni/Profile", "_blank"); }
 
 
 function anim(){
