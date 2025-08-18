@@ -86,17 +86,6 @@ $conn->close();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -126,7 +115,6 @@ $conn->close();
             <span></span>
             <span></span>
             <span></span>
-                
 
         </div>
 
@@ -138,7 +126,6 @@ $conn->close();
     
         <p>Perfil no Github</p>
 
-
     </div>
 
 
@@ -147,10 +134,7 @@ $conn->close();
 
         <p>Entre em Contato</p>
 
-
     </div>
-
-
 
 
 
@@ -398,7 +382,6 @@ $conn->close();
         </div>
 
     </div>
-
 
 
 
