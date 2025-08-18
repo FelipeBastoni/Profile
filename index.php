@@ -223,7 +223,7 @@ $conn->close();
             <p onclick="modal()">Nos Contate</p> 
             <br>
             <br> 
-            <p>Acesso do Desenvolvedor</p>
+            <p onclick="window.location.href='des.php'">Acesso do Desenvolvedor</p>
             <p onclick="rep()">Repositório do Modelo</p>
 
 
