@@ -572,8 +572,17 @@ p, h2, h3, a, i{
 
 .log{
 
+    text-align: center;
+    padding-top: 25vh; 
     background-color: red;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.btnlog{
+
+    margin-left: 8.25%;
 
 }

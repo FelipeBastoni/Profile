@@ -145,14 +145,29 @@ $conn->close();
 
         <div class="log">
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <h3>Faça o log in:</h3>
+                <br>
+                <br>
 
-            <h3>Faça o log in</h3>
+            <form>
+
+                <input placeholder="Usuario">
+                <br>
+                <input type="password" placeholder="Senha">
+                <br>
+                <br>
+
+                <input type="submit" class="btnlog">
+
+            </form>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <button onclick="dev()">Voltar à Pagina Inicial</button>
+
 
         </div>
 
