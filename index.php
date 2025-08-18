@@ -157,6 +157,23 @@ $conn->close();
 </div>
 
 
+    <div class="devi" id="corp">
+
+        <div class="log">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h3>Faça o log in</h3>
+
+        </div>
+
+
+    </div>
 
 
     <div class="contato" id="md" onclick="modal()">
@@ -223,7 +240,7 @@ $conn->close();
             <p onclick="modal()">Nos Contate</p> 
             <br>
             <br> 
-            <p onclick="window.location.href='des.php'">Acesso do Desenvolvedor</p>
+            <p onclick="dev(), anim(), alternarPainel()">Acesso do Desenvolvedor</p>
             <p onclick="rep()">Repositório do Modelo</p>
 
 

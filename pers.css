@@ -28,6 +28,7 @@ p, h2, h3, a, i{
         align-items: center;
         display: flex;
         flex-wrap: wrap;
+        z-index: 2;
 
         }
 
@@ -501,6 +502,7 @@ p, h2, h3, a, i{
             color: white;
             transform: translateX(-100%); 
             transition: transform 0.5s ease;
+            z-index: 1;
 
         }
 
@@ -551,3 +553,27 @@ p, h2, h3, a, i{
 
             }
 
+.devi{
+
+    height: 100vh;
+    width: 99vw;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    display: none;
+
+}
+
+.atv{
+
+    display: flex;
+
+}
+
+.log{
+
+    background-color: red;
+    height: 50%;
+    width: 50%;
+
+}

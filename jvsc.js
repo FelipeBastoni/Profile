@@ -99,8 +99,44 @@ document.addEventListener("keydown", function(e) {
 });
 
 
-function qms(){document.getElementById('Qm').scrollIntoView({ behavior: 'smooth' })}
 
-function tp(){document.getElementById('Nvd').scrollIntoView({ behavior: 'smooth' })}
+function tp(){
+
+    const tel = document.getElementById('corp');
+
+    if (tel.classList.contains('atv')){
+
+        document.getElementById('corp').classList.toggle('atv');
+
+    }
+    
+    document.getElementById('Nvd').scrollIntoView({ behavior: 'smooth' });
 
 
+}
+
+
+
+function qms(){
+    
+    const tel = document.getElementById('corp');
+
+    if (tel.classList.contains('atv')){
+
+        document.getElementById('corp').classList.toggle('atv');
+
+    }
+
+    document.getElementById('Qm').scrollIntoView({ behavior: 'smooth' })
+
+    
+}
+
+
+
+function dev(){
+
+    document.getElementById('corp').classList.toggle('atv');
+
+
+}
