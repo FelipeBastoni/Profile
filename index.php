@@ -1,6 +1,8 @@
 
 <?php
 
+session_start();
+
 
 $servername = "localhost";
 $username = "root";
@@ -22,6 +24,9 @@ if ($result->num_rows > 0) {
     }
 
 }
+
+$conn->close();
+
 
 
 class Novidade {
@@ -74,10 +79,85 @@ class Novidade {
 
 
 
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+$user = "";
+$senha = "";
+$eruser = "";
+$ersenha = "";
+
+
+if($_SERVER['REQUEST_METHOD'] == 'POST' ){
+
+
+    if(empty($_POST['usr'])){
+
+        $eruser = "Usuário inválido";
+
+
+    }else{
+
+        $user = test_input($_POST['usr']);  
+
+    }
+
+    if(empty($_POST['snh'])){
+
+        $ersenha = "Senha Inválida";
+
+
+    }else{
+
+        $senha = test_input($_POST['snh']);
+
+    }
+
+
+    if(empty($eruser) && empty($ersenha)){
 
 
 
-$conn->close();
+
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "test";
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        $sql = "SELECT * from users WHERE NOME = '$user' AND SENHA = '$senha'";
+        $result = $conn->query($sql);
+
+
+        if ($result->num_rows > 0) {
+
+            while($row = $result->fetch_assoc()){
+
+                $_SESSION['ID'] = $row['ID'];
+
+                header("location: index.php");
+
+            }
+
+        }
+
+        $conn->close();
+
+
+
+
+    }
+
+
+}
+
+
+
 
 
 ?>
@@ -149,11 +229,11 @@ $conn->close();
                 <br>
                 <br>
 
-            <form>
+            <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
 
-                <input placeholder="Usuario">
+                <input placeholder="Usuario" name="usr">
                 <br>
-                <input type="password" placeholder="Senha">
+                <input type="password" name="snh" placeholder="Senha">
                 <br>
                 <br>
 
@@ -166,7 +246,7 @@ $conn->close();
                 <br>
                 <br>
 
-                <button onclick="dev()">Voltar à Pagina Inicial</button>
+                <button class="btn" onclick="dev()">Voltar à Pagina Inicial</button>
 
 
         </div>
@@ -402,7 +482,11 @@ $conn->close();
 
 </div>
 
+<script>
 
+console.log(<?php echo $_SESSION['ID'];  ?>)
+
+</script>
 
 
 
