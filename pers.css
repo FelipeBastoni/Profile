@@ -574,15 +574,43 @@ p, h2, h3, a, i{
 
     text-align: center;
     padding-top: 25vh; 
-    background-color: red;
+    background-color: rgb(222, 217, 213);
     height: 100%;
     width: 100%;
 
 }
 
 
-.btnlog{
+    .log>h3{
 
-    margin-left: 8.25%;
+        color: black;
 
-}
+    }
+
+    .log input{
+
+        border: 1px solid black;
+        border-radius: 3px;
+        height: 5vh;
+        margin-bottom: 0.5%;
+        padding: 0.5%;
+        user-select: text;
+
+    }
+
+    .log button{
+
+        border: 1px solid black;
+        border-radius: 3px;
+        width: 15vw;
+        height: 5vh;
+
+
+    } 
+
+    .btnlog{
+
+        margin-left: 6.65%;
+        width: 5vw;
+
+    }
