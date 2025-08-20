@@ -199,7 +199,7 @@ p, h2, h3, a, i{
 
         padding-top: 13vh;
         padding-left: 3vh;
-        background-color: #34363c;
+        background-color: #4e5052;
         height: 100vh;
 
     }
@@ -236,12 +236,5 @@ p, h2, h3, a, i{
         padding-left: 2%;
         padding-right: 2%;
         flex: 1;
-
-    }
-
-    .comm{
-
-        padding-top: 10%;
-        padding-left: 85vw;
 
     }

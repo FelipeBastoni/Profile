@@ -229,7 +229,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
                 <br>
                 <br>
 
-            <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
+            <form action="des.php" method="POST">
 
                 <input placeholder="Usuario" name="usr">
                 <br>

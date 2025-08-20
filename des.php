@@ -1,3 +1,44 @@
+
+<?php
+
+ini_set('display_errors', 0);  
+ini_set('log_errors', 1);      
+error_reporting(E_ALL);   
+
+if ($_SERVER["REQUEST_METHOD"] != "POST") {
+
+    header("Location: index.php");
+    exit();
+
+}
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "test";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    $sql = "INSERT INTO posts (TITULO_P, DESCRICAO, TITULO_T, TEXTO) VALUES ('{$_POST['titulo_p']}','{$_POST['descricao']}','{$_POST['titulo_t']}','{$_POST['texto']}')";
+
+
+
+    $conn->query($sql);
+    $conn->close();
+
+
+
+}
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -117,37 +158,54 @@
 
         <div class="alternov">
 
+
             <h3>Adicione Novidades:</h3>
 
             <br>
             <br>
 
-            <p>Coloque o título do seletor:</p>
-            <input>
+            <form action="<?php echo $_SERVER['PHP_SELF'];?>" method='POST'>
 
-            <br>
-            <br>
+                <p>Coloque o título do seletor:</p>
+                <br>
+                <input name='titulo_p'>
 
-            <p>Coloque a descrição do seletor:</p>
-            <input>
+                <br>
+                <br>
 
-            <br>
-            <br>
+                <p>Coloque a descrição do seletor:</p>
+                <br>
+                <input name='descricao'>
 
-            <p>Coloque o título da exibição:</p>
-            <input>
+                <br>
+                <br>
 
-            <br>
-            <br>
+                <p>Coloque o título da exibição:</p>
+                <br>
+                <input name='titulo_t'>
 
-            <p>Coloque a descrição da exibição:</p>
-            <input>
+                <br>
+                <br>
 
-            <br>
-            <br>
+                <p>Coloque a descrição da exibição:</p>
+                <br>
+                <input name='texto'>
 
-            <p>Coloque a imagem da exibição:</p>
-            <input type="file">
+                <br>
+                <br>
+
+                <p>Coloque a imagem da exibição:</p>
+                <br>
+
+                <br>
+                <br>        
+                <br>        
+                <br>
+                <br>        
+
+                <input type="submit">
+
+            </form>
 
 
 
@@ -174,10 +232,5 @@
 
     </div>
 
-    <div class="comm">
-    
-        <button>Salvar alterações</button>
-
-    </div>
 
 </div>
