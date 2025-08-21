@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $sql = "INSERT INTO posts (TITULO_P, DESCRICAO, TITULO_T, TEXTO) VALUES ('{$_POST['titulo_p']}','{$_POST['descricao']}','{$_POST['titulo_t']}','{$_POST['texto']}')";
+    $sql = "INSERT INTO posts (TITULO_P, DESCRICAO, TITULO_T, TEXTO, FOTO) VALUES ('{$_POST['titulo_p']}','{$_POST['descricao']}','{$_POST['titulo_t']}','{$_POST['texto']}','{$_POST['foto']}')";
 
 
 
@@ -196,6 +196,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 <p>Coloque a imagem da exibição:</p>
                 <br>
+                <input type="file" name='foto'>
 
                 <br>
                 <br>        
