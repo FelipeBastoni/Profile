@@ -25,7 +25,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $sql = "INSERT INTO posts (TITULO_P, DESCRICAO, TITULO_T, TEXTO, FOTO) VALUES ('{$_POST['titulo_p']}','{$_POST['descricao']}','{$_POST['titulo_t']}','{$_POST['texto']}','{$_POST['foto']}')";
 
 
-
     $conn->query($sql);
     $conn->close();
 
@@ -159,7 +158,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <div class="alternov">
 
 
-            <h3>Adicione Novidades:</h3>
+            <h3>Editar Novidades:</h3>
 
             <br>
             <br>
@@ -216,7 +215,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="alterllinks">
 
-            <h3>Ainda Falta implementar td</h3>
+            <h3>Editar Links</h3>
 
 
         </div>

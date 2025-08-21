@@ -200,14 +200,14 @@ p, h2, h3, a, i{
         padding-top: 13vh;
         padding-left: 3vh;
         background-color: #4e5052;
-        height: 100vh;
+        height: auto;
 
     }
 
 
     .con{
 
-        display: flex;
+        display: block;
 
     }
 
@@ -216,7 +216,6 @@ p, h2, h3, a, i{
         padding-top: 4%;
         padding-left: 2%;
         padding-right: 2%;
-        flex: 1;
 
     }
 
@@ -225,7 +224,6 @@ p, h2, h3, a, i{
         padding-top: 4%;
         padding-left: 2%;
         padding-right: 2%;
-        flex: 1;
 
     }
 
@@ -235,6 +233,5 @@ p, h2, h3, a, i{
         padding-top: 4%;
         padding-left: 2%;
         padding-right: 2%;
-        flex: 1;
 
     }
