@@ -201,8 +201,37 @@ p, h2, h3, a, i{
         padding-left: 3vh;
         background-color: #4e5052;
         height: auto;
+        
+    }
+
+
+    .seletpers{
+
+        display: flex;
+        padding-top: 6%;
+        padding-bottom: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        align-items: center;
+        text-align: center;
 
     }
+
+        .selet{
+
+            background-color: white;
+            width: fit-content;
+            text-align: center;
+            flex: 1;
+
+        }
+
+
+        .selet p{
+
+            color: black;
+
+        }
 
 
     .con{

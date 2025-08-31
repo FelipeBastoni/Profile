@@ -1,37 +1,21 @@
 
 <?php
 
+session_start();
+
+
 ini_set('display_errors', 0);  
 ini_set('log_errors', 1);      
 error_reporting(E_ALL);   
 
-if ($_SERVER["REQUEST_METHOD"] != "POST") {
-
-    header("Location: index.php");
-    exit();
-
-}
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "test";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    $sql = "INSERT INTO posts (TITULO_P, DESCRICAO, TITULO_T, TEXTO, FOTO) VALUES ('{$_POST['titulo_p']}','{$_POST['descricao']}','{$_POST['titulo_t']}','{$_POST['texto']}','{$_POST['foto']}')";
 
 
-    $conn->query($sql);
-    $conn->close();
+    if (!isset($_SESSION['ID'])){
 
+        header("Location: index.php");
+        exit();
 
-
-}
-
+    }
 
 
 ?>
@@ -151,6 +135,31 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <h2>Personalize a Landing Page</h2>
 
+    <div class='seletpers'>
+
+        <div class='selet'>
+
+            <p>Editar Novidades</p>
+
+        </div>
+
+        <div class='selet'>
+
+            <p>Editar Links</p>
+
+        </div>
+
+        <div class='selet'>
+
+            <p>Editar Outro</p>
+
+        </div>
+
+    </div>
+
+
+
+
     <div class="con">
 
 
@@ -163,7 +172,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <br>
             <br>
 
-            <form action="<?php echo $_SERVER['PHP_SELF'];?>" method='POST'>
+            <form action="procss.php" method='POST'>
 
                 <p>Coloque o título do seletor:</p>
                 <br>

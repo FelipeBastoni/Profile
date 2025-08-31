@@ -3,6 +3,7 @@
 
 session_start();
 
+$_SESSION = [];
 
 $servername = "localhost";
 $username = "root";
@@ -98,6 +99,8 @@ $ersenha = "";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
+    echo "<script>console.log('oaaoaoao ')</script>";
+
 
     if(empty($_POST['usr'])){
 
@@ -144,7 +147,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                 $_SESSION['ID'] = $row['ID'];
 
-                header("location: index.php");
+                header("location: des.php");
+                exit();
 
             }
 
@@ -233,7 +237,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
                 <br>
                 <br>
 
-            <form action="des.php" method="POST">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
 
                 <input placeholder="Usuario" name="usr">
                 <br>
