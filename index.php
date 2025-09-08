@@ -432,22 +432,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
                     <?php    
                     
                         global $novidades;
-
                         $nt = count($novidades);
-                    
-                        $n = 0;
+                        $nt--;
 
+                        while($nt>=0){
 
-                        while($n<$nt){
-
-                            
-                            $novidades[$n]->novidades();
-
- 
-                            $n++;
+                            $novidades[$nt]->novidades();
+                            $nt--;
 
                         }
-                    
                     
                     ?>
 
