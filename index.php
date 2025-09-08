@@ -55,6 +55,27 @@ if ($result->num_rows > 0) {
 }
 
 
+$sql = "SELECT * from lnk_playlist";
+$result = $conn->query($sql);
+
+
+if ($result->num_rows > 0) {
+
+    $i = 0;
+
+    while($row = $result->fetch_assoc()){
+
+        $playlists[$i] = new Lnks($row['ID'], $row['playlist'], $row['descr']);    
+
+        $i++;
+
+    }
+
+}else{
+
+        $lnks[] = new Lnks("0"," ","novos em breve");    
+
+}
 
 
 
@@ -450,26 +471,22 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                     <div class="linksbx1">
 
-                        <a href="https://www.youtube.com/watch?v=Lc1Ll-euRSg&list=PLLkVMiSEs5fslGjVlOkkK4j7qfOg8Ode3" target="_blank">Men At Work</a>
-                
-                        <a href="https://www.youtube.com/watch?v=JRDgihVDEko&list=PLRVgFSDAD4puuuJ_PY1lV8Jbr4QbYTKEg" target="_blank">Dire Straits</a>
-                
-                        <a href="https://www.youtube.com/watch?v=ddzsgetrQyw&list=PLfqlpuz-LWL28EHinbSqNhj2nFZS-WQ-I" target="_blank">Metallica</a>
-
-                        <a href="https://www.youtube.com/watch?v=5_hIojjA3A4&list=PL93rs4Zu5DVhR54v_4bhbq7pbRENQ7Ql9" target="_blank">Korn</a>
-
-                        <a href="https://www.youtube.com/watch?v=kXYiU_JCYtU&list=PL9LkJszkF_Z6bJ82689htd2wch-HVbzCO" target="_blank">Linkin Park</a>
-                
-                        <a href="https://www.youtube.com/watch?v=hTWKbfoikeg&list=PLF1D793B61571DD4A" target="_blank">Nirvana</a>
-                
-                        <a href="https://www.youtube.com/watch?v=uAE6Il6OTcs&list=PLA27AEEF9709E8016" target="_blank">Alice In Chains</a>
-                
-                        <a href="https://www.youtube.com/watch?v=K8z8hLvjb_U&list=PLtfJT7Fg2lKXLksdwqftx0ZaQ2ilxWpEr" target="_blank">Radiohead</a>
-                
-                        <a href="https://www.youtube.com/watch?v=oVctwNqAUrs&list=PLPNKnwlz-OnZlnghYSZfudlnLGE6ww3nf" target="_blank">Mac DeMarco</a>
                     
-                        <a href="https://www.youtube.com/watch?v=T_OWvLDIyno&list=PLgF5KLwzxU-1C0_hXVdeOUKP-UBx8_xvY" target="_blank">Kendrick Lamar</a>
+                        <?php
 
+                            global $playlists;
+                            $nt = count($playlists);                        
+                            $n = 0;
+
+                            while($n<$nt){
+
+                                $playlists[$n]->mostra();    
+                                $n++;
+
+                            }
+                    
+                        ?>
+                    
 
                     </div>
 
@@ -489,33 +506,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                     <?php
 
-
                         global $lnks;
-
                         $nt = count($lnks);
-                    
                         $n = 0;
-
 
                         while($n<$nt){
 
-                            
-                            $lnks[$n]->mostra();
-
- 
+                            $lnks[$n]->mostra(); 
                             $n++;
 
                         }
-
-
-                
                 
                     ?>
-
-
-                    
-                    
-                    
                     
                 
                 </div>
