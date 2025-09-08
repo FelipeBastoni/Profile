@@ -30,6 +30,35 @@ if ($result->num_rows > 0) {
 
 }
 
+
+
+$sql = "SELECT * from lnk_diverso";
+$result = $conn->query($sql);
+
+
+if ($result->num_rows > 0) {
+
+    $i = 0;
+
+    while($row = $result->fetch_assoc()){
+
+        $lnks[$i] = new Lnks($row['ID'], $row['link'], $row['descr']);    
+
+        $i++;
+
+    }
+
+}else{
+
+        $lnks[] = new Lnks("Novos em Breve","");    
+
+}
+
+
+
+
+
+
 $conn->close();
 
 
@@ -75,12 +104,40 @@ class Novidade {
         
         ';
 
+    }
+
+}
+
+
+class Lnks {
+
+    public $iddv;
+    public $lnk_dv;
+    public $lnk_descr;
+    
+
+    public function __construct($iddv, $lnk_dv, $lnk_descr){
+
+        $this->iddv = $iddv;
+        $this->lnk_dv = $lnk_dv;
+        $this->lnk_descr = $lnk_descr;
+
+    }
+
+    public function mostra(){
+
+        echo '  
+                <a href="'.$this->lnk_dv.'" target="_blank">'.$this->lnk_descr.'</a>
+        
+        ';
 
 
 
     }
 
 }
+
+
 
 
 
@@ -98,8 +155,6 @@ $ersenha = "";
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' ){
-
-    echo "<script>console.log('oaaoaoao ')</script>";
 
 
     if(empty($_POST['usr'])){
@@ -276,7 +331,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
             <div class="txtcontato">
 
                 <h2>Contacte-nos</h2>
-    
+
                 <br>
                 <br>
                 <br>
@@ -430,16 +485,38 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
                 <h3>Links de coisas:</h3>
 
                 <div class="linksbx2">
-                  
-                    <a href="https://wplace.live/?lat=-22.19188065859941&lng=-46.751748378222665&zoom=12.838582002820917" target="_blank">Wplace Pinhal</a>
+                
+
+                    <?php
+
+
+                        global $lnks;
+
+                        $nt = count($lnks);
                     
-                    <a href="https://convertio.co/pt/" target="_blank">Conversor de Arquivos</a>
+                        $n = 0;
+
+
+                        while($n<$nt){
+
+                            
+                            $lnks[$n]->mostra();
+
+ 
+                            $n++;
+
+                        }
+
+
+                
+                
+                    ?>
+
+
                     
-                    <a href="https://www.decolar.com/" target="_blank">Site da Decolar</a>
                     
-                    <a href="https://theuselessweb.com/" target="_blank">Surpreenda-se</a>
                     
-                    <a href="https://www.w3schools.com/" target="_blank">W3schools</a>
+                    
                 
                 </div>
 
@@ -489,13 +566,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
 
 </div>
-
-<script>
-
-console.log(<?php echo $_SESSION['ID'];  ?>)
-
-</script>
-
 
 
 </body>
