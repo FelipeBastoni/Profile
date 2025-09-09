@@ -78,9 +78,15 @@ if ($result->num_rows > 0) {
 }
 
 
-
-
 $conn->close();
+
+
+
+
+
+
+
+
 
 
 
@@ -115,12 +121,12 @@ class Novidade {
 
         echo' 
                                         
-        <div class="opt" onclick="action(\'' . $this->id . '\',\'' . $this->ft . '\', \''.$this->txt.'\',  \''.$this->titulo_t.'\')">
+            <div class="opt" onclick="action(\'' . $this->id . '\',\'' . $this->ft . '\', \''.$this->txt.'\',  \''.$this->titulo_t.'\')">
 
-            <h2>'.$this->titulo_p.'</h2>
-            <p>'.$this->descricao.'</p>
+                <h2>'.$this->titulo_p.'</h2>
+                <p>'.$this->descricao.'</p>
 
-        </div>
+            </div>
         
         
         ';
@@ -135,7 +141,7 @@ class Lnks {
     public $iddv;
     public $lnk_dv;
     public $lnk_descr;
-    
+
 
     public function __construct($iddv, $lnk_dv, $lnk_descr){
 
@@ -148,11 +154,31 @@ class Lnks {
     public function mostra(){
 
         echo '  
-                <a href="'.$this->lnk_dv.'" target="_blank">'.$this->lnk_descr.'</a>
-        
+            <a href="'.$this->lnk_dv.'" target="_blank">'.$this->lnk_descr.'</a>
+
         ';
 
+    }
 
+}
+
+
+function shownov($var){
+
+    foreach(array_reverse($var) as $item){
+
+        $item->novidades();
+
+    }
+
+}
+
+
+function show($var){
+
+    foreach($var as $item){
+
+        $item->mostra(); 
 
     }
 
@@ -168,6 +194,7 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
+
 
 $user = "";
 $senha = "";
@@ -431,17 +458,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                     <?php    
                     
-                        global $novidades;
-                        $nt = count($novidades);
-                        $nt--;
+                        shownov($novidades);
 
-                        while($nt>=0){
-
-                            $novidades[$nt]->novidades();
-                            $nt--;
-
-                        }
-                    
                     ?>
 
 
@@ -466,18 +484,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                     
                         <?php
-
-                            global $playlists;
-                            $nt = count($playlists);                        
-                            $n = 0;
-
-                            while($n<$nt){
-
-                                $playlists[$n]->mostra();    
-                                $n++;
-
-                            }
                     
+                            show($playlists);
+
                         ?>
                     
 
@@ -499,17 +508,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                     <?php
 
-                        global $lnks;
-                        $nt = count($lnks);
-                        $n = 0;
+                        show($lnks);
 
-                        while($n<$nt){
-
-                            $lnks[$n]->mostra(); 
-                            $n++;
-
-                        }
-                
                     ?>
                     
                 
@@ -528,8 +528,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
         <div class="bx3">
 
-        <h3 id="Fts" >Álbum de Fotos</h3>
-
+            <h3 id="Fts" >Álbum de Fotos</h3>
 
         </div>
 
