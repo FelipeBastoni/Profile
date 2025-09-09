@@ -223,7 +223,59 @@ error_reporting(E_ALL);
 
         <div class="alterllinks">
 
-            <h3>Editar Links</h3>
+            <h3>Editar Links Diversos</h3>
+
+            <br>
+            <br>
+
+            <form>
+
+                <p>Adicione a Descrição</p>
+                <input>
+
+                <br>
+                <br>    
+
+                <p>Adicione o Link</p>
+                <input>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <input type="submit">
+
+
+
+        </div>
+
+
+        <div class="alterllinks">
+
+            <h3>Editar Playlists</h3>
+
+            <br>
+            <br>
+
+            <form>
+
+                <p>Adicione a Descrição</p>
+                <input>
+                
+                <br>
+                <br>
+
+                <p>Adicione o Link</p>
+                <input>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <input type="submit">
+
 
 
         </div>
