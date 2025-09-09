@@ -1,6 +1,8 @@
 
 <?php
 
+require 'objmet.php';
+
 session_start();
 
 $_SESSION = [];
@@ -26,9 +28,10 @@ if ($result->num_rows > 0) {
 
 }else{
 
-        $novidades[] = new Novidade("Novas Novidades em Breve","","","","","","","");    
+    $novidades[] = new Novidade("Novas Novidades em Breve","","","","","","","");    
 
 }
+
 
 
 
@@ -43,16 +46,17 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()){
 
         $lnks[$i] = new Lnks($row['ID'], $row['link'], $row['descr']);    
-
         $i++;
 
     }
 
 }else{
 
-        $lnks[] = new Lnks("Novos em Breve","");    
+    $lnks[] = new Lnks("Novos em Breve","");    
 
 }
+
+
 
 
 $sql = "SELECT * from lnk_playlist";
@@ -66,124 +70,17 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()){
 
         $playlists[$i] = new Lnks($row['ID'], $row['playlist'], $row['descr']);    
-
         $i++;
 
     }
 
 }else{
 
-        $lnks[] = new Lnks("0"," ","novos em breve");    
+    $lnks[] = new Lnks("0"," ","novos em breve");    
 
 }
-
 
 $conn->close();
-
-
-
-
-
-
-
-
-
-
-
-class Novidade {
-
-    public $titulo_p;
-    public $descricao;
-    public $titulo_t;
-    public $txt;
-    public $ft;
-    public $extra;
-    public $numero;
-    public $id;
-
-
-    public function __construct($titulo_p, $descricao, $titulo_t, $txt, $ft, $extra, $numero, $id){
-
-        $this->titulo_p = $titulo_p;
-        $this->descricao = $descricao;
-        $this->titulo_t = $titulo_t;
-        $this->txt = $txt;
-        $this->ft = $ft;
-        $this->extra = $extra;
-        $this->numero = $numero;
-        $this->id = $id;
-
-
-    }
-
-
-    public function novidades(){
-
-        echo' 
-                                        
-            <div class="opt" onclick="action(\'' . $this->id . '\',\'' . $this->ft . '\', \''.$this->txt.'\',  \''.$this->titulo_t.'\')">
-
-                <h2>'.$this->titulo_p.'</h2>
-                <p>'.$this->descricao.'</p>
-
-            </div>
-        
-        
-        ';
-
-    }
-
-}
-
-
-class Lnks {
-
-    public $iddv;
-    public $lnk_dv;
-    public $lnk_descr;
-
-
-    public function __construct($iddv, $lnk_dv, $lnk_descr){
-
-        $this->iddv = $iddv;
-        $this->lnk_dv = $lnk_dv;
-        $this->lnk_descr = $lnk_descr;
-
-    }
-
-    public function mostra(){
-
-        echo '  
-            <a href="'.$this->lnk_dv.'" target="_blank">'.$this->lnk_descr.'</a>
-
-        ';
-
-    }
-
-}
-
-
-function shownov($var){
-
-    foreach(array_reverse($var) as $item){
-
-        $item->novidades();
-
-    }
-
-}
-
-
-function show($var){
-
-    foreach($var as $item){
-
-        $item->mostra(); 
-
-    }
-
-}
-
 
 
 
@@ -194,6 +91,8 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
+
+
 
 
 $user = "";
@@ -231,8 +130,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
     if(empty($eruser) && empty($ersenha)){
 
 
-
-
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -258,9 +155,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
         }
 
         $conn->close();
-
-
-
 
     }
 
