@@ -262,7 +262,7 @@ error_reporting(E_ALL);
 
                 <p>Adicione a Descrição</p>
                 <input>
-                
+
                 <br>
                 <br>
 
@@ -286,7 +286,7 @@ error_reporting(E_ALL);
 
             <h3>Ainda falta FAZER TUDO KKKKKKKK</h3>
 
-
+    
         </div>
 
 

@@ -422,7 +422,37 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
         <div class="bx3">
 
-            <h3 id="Fts" >Álbum de Fotos</h3>
+            <h3 id="Fts" class="ttfts">Álbum de Fotos</h3>
+
+
+                <div class="contfts">
+                
+
+
+                    <div class="ft">
+
+                        <p>ft1</p>
+
+                    </div>
+
+
+                    <div class="ft">
+
+                        <p>ft2</p>
+
+                    </div>
+
+
+                    <div class="ft">
+
+                        <p>ft3</p>
+
+                    </div>
+
+
+
+
+                </div>
 
         </div>
 

@@ -439,6 +439,27 @@ p, h2, h3, a, i{
 
             }
 
+                .contfts{
+
+                    display: flex;
+
+                }
+
+                    .ttfts{
+
+                        margin-bottom: 5vh;
+
+                    }
+
+                    .ft{
+
+                        border: 1px solid black;
+                        width: 30vw; 
+                        height: 80vh;
+                        margin-right: 3vw;
+
+                    }
+
 
         .fm{
 
