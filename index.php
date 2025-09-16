@@ -422,7 +422,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
         <div class="bx3">
 
-            <h3 id="Fts" class="ttfts">Álbum de Fotos</h3>
+            <h3 id="Fts" class="ttfts">Soluções</h3>
 
 
                 <div class="contfts">
@@ -431,21 +431,101 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                     <div class="ft">
 
-                        <p>ft1</p>
+                        <h1>Sistemas de Gestão e Gerenciamento (ERP).</h1>
+
+                            <br>
+                            <br>
+                            <br>
+
+                        <p>Softwares desenvolvidos sob medida para o seu negócio com interfaces e rotinas personalizadas, desenvolveremos uma aplicação que supra todas as necessidades, visando sempre a praticidade, funcionalidade e desempenho.</p>
+
+                            <br>
+                            <br>
+
+                        <p>Aplicações focadas em:</p>
+
+                            <br>
+
+                        <ul>
+
+                            <li>Diminuir Demandas Operacionas</li>
+
+                            <li>Simplificar Processos</li>
+
+                            <li>Agilizar Procedimentos</li>
+
+                            <li>Gerar Relatórios</li>
+
+                            <li>Criação e Gerenciamento de Registros</li>
+
+                        </ul>
 
                     </div>
 
 
                     <div class="ft">
 
-                        <p>ft2</p>
+                        <h1>Plataforma Web Institucional e de Serviços Online.</h1>
+
+                            <br>
+                            <br>
+                            <br>
+
+                        <p>Desenvolveremos a porta de entrada de seu negócio na internet da forma que desejar, desde aplicações estáticas até aplicações interativas e funcionais.</p>
+
+                            <br>
+                            <br>
+
+                        <p>Aplicações focadas em:</p>
+
+                            <br>
+
+                        <ul>
+
+                            <li>Divulgar seu Negócio</li>
+
+                            <li>Centralizar Informações sobre seu Negócio</li>
+
+                            <li>Trazer Soluções de Consulta ao seu Cliente</li>
+
+                            <li>Criar Plataformas de Serviços</li>
+
+                        </ul>
 
                     </div>
 
 
                     <div class="ft">
 
-                        <p>ft3</p>
+                        <h1>Automações e Aplicações Embarcadas.</h1>
+
+                            <br>
+                            <br>
+                            <br>
+
+                        <p>Soluções inteligentes para automatizar processos físicos de seu negócio, desenvolvidos visando a autonomia completa de uma etapa de sua rotina de produção ou serviço.</p>
+
+                            <br>
+                            <br>
+
+                        <p>Aplicações focadas em:</p>
+
+                            <br>
+
+                        <ul>
+
+                            <li>Gerenciamento Inteligente</li>
+
+                            <li>Automatizar Processos</li>
+
+                            <li>Aumento da Produção e Qualidade</li>
+
+                            <li>Diminuir Demandas Operacionas</li>
+
+                            <li>Redução de Custos</li>
+
+
+                        </ul>
 
                     </div>
 
