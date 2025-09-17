@@ -431,101 +431,134 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                     <div class="ft">
 
-                        <h1>Sistemas de Gestão e Gerenciamento (ERP).</h1>
+                        <div class="textsolu">
 
-                            <br>
-                            <br>
-                            <br>
+                            <h1>Sistemas de Gestão e Gerenciamento (ERP).</h1>
 
-                        <p>Softwares desenvolvidos sob medida para o seu negócio com interfaces e rotinas personalizadas, desenvolveremos uma aplicação que supra todas as necessidades, visando sempre a praticidade, funcionalidade e desempenho.</p>
+                                <br>
+                                <br>
+                                <br>
 
-                            <br>
-                            <br>
+                            <p>Softwares desenvolvidos sob medida para o seu negócio com interfaces e rotinas personalizadas, desenvolveremos uma aplicação que supra todas as necessidades, visando sempre a praticidade, funcionalidade e desempenho.</p>
 
-                        <p>Aplicações focadas em:</p>
+                                <br>
+                                <br>
 
-                            <br>
+                            <p>Aplicações focadas em:</p>
 
-                        <ul>
+                                <br>
 
-                            <li>Diminuir Demandas Operacionas</li>
+                            <ul>
 
-                            <li>Simplificar Processos</li>
+                                <li>Diminuir Demandas Operacionas</li>
 
-                            <li>Agilizar Procedimentos</li>
+                                <li>Simplificar Processos</li>
 
-                            <li>Gerar Relatórios</li>
+                                <li>Agilizar Procedimentos</li>
 
-                            <li>Criação e Gerenciamento de Registros</li>
+                                <li>Gerar Relatórios</li>
 
-                        </ul>
+                                <li>Criação e Gerenciamento de Registros</li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <div class="btsolc">
+
+                            <button class="btn-soluc">Saiba mais</button>
+        
+                        </div>
+                    
+                    
+                    </div>
+
+
+                    <div class="ft">
+
+                        <div class="textsolu">
+
+                            <h1>Plataforma Web Institucional e de Serviços Online.</h1>
+
+                                <br>
+                                <br>
+                                <br>
+
+                            <p>Desenvolveremos a porta de entrada de seu negócio na internet da forma que desejar, desde aplicações estáticas até aplicações interativas e funcionais.</p>
+
+                                <br>
+                                <br>
+
+                            <p>Aplicações focadas em:</p>
+
+                                <br>
+
+                            <ul>
+
+                                <li>Divulgar seu Negócio</li>
+
+                                <li>Centralizar Informações sobre seu Negócio</li>
+
+                                <li>Trazer Soluções de Consulta ao seu Cliente</li>
+
+                                <li>Criar Plataformas de Serviços</li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="btsolc">
+
+                            <button class="btn-soluc">Saiba Mais</button>
+        
+                        </div>
+
 
                     </div>
 
 
                     <div class="ft">
 
-                        <h1>Plataforma Web Institucional e de Serviços Online.</h1>
+                        <div class="textsolu">
 
-                            <br>
-                            <br>
-                            <br>
+                            <h1>Automações e Aplicações Embarcadas.</h1>
 
-                        <p>Desenvolveremos a porta de entrada de seu negócio na internet da forma que desejar, desde aplicações estáticas até aplicações interativas e funcionais.</p>
+                                <br>
+                                <br>
+                                <br>
 
-                            <br>
-                            <br>
+                            <p>Soluções inteligentes para automatizar processos físicos de seu negócio, desenvolvidos visando a autonomia completa de uma etapa de sua rotina de produção ou serviço.</p>
 
-                        <p>Aplicações focadas em:</p>
+                                <br>
+                                <br>
 
-                            <br>
+                            <p>Aplicações focadas em:</p>
 
-                        <ul>
+                                <br>
 
-                            <li>Divulgar seu Negócio</li>
+                            <ul>
 
-                            <li>Centralizar Informações sobre seu Negócio</li>
+                                <li>Gerenciamento Inteligente</li>
 
-                            <li>Trazer Soluções de Consulta ao seu Cliente</li>
+                                <li>Automatizar Processos</li>
 
-                            <li>Criar Plataformas de Serviços</li>
+                                <li>Aumento da Produção e Qualidade</li>
 
-                        </ul>
+                                <li>Diminuir Demandas Operacionas</li>
 
-                    </div>
+                                <li>Redução de Custos</li>
 
+                            </ul>
 
-                    <div class="ft">
+                        </div>
 
-                        <h1>Automações e Aplicações Embarcadas.</h1>
+                        <div class="btsolc">
 
-                            <br>
-                            <br>
-                            <br>
+                            <button class="btn-soluc">Saiba mais</button>
+        
+                        </div>
 
-                        <p>Soluções inteligentes para automatizar processos físicos de seu negócio, desenvolvidos visando a autonomia completa de uma etapa de sua rotina de produção ou serviço.</p>
-
-                            <br>
-                            <br>
-
-                        <p>Aplicações focadas em:</p>
-
-                            <br>
-
-                        <ul>
-
-                            <li>Gerenciamento Inteligente</li>
-
-                            <li>Automatizar Processos</li>
-
-                            <li>Aumento da Produção e Qualidade</li>
-
-                            <li>Diminuir Demandas Operacionas</li>
-
-                            <li>Redução de Custos</li>
-
-
-                        </ul>
 
                     </div>
 
