@@ -17,6 +17,7 @@ p, h2, h3, a, i{
 
 }
 
+
 ul{
 
     padding-left: 5%;
@@ -378,6 +379,7 @@ ul{
 
                 .linksbx1{
 
+                    padding-top: 5%;
                     padding-bottom: 10%;
                     display: flex;
                     flex-direction: column;
@@ -388,9 +390,7 @@ ul{
 
                 .linksbx1>a{
     
-                    padding-top: 2%;    
                     padding-left: 2%;
-                    width: fit-content;
 
                 }
 
@@ -412,6 +412,7 @@ ul{
 
                 .linksbx2{
 
+                    padding-top: 5%;
                     padding-bottom: 10%;
                     display: flex;
                     flex-direction: column;
@@ -422,7 +423,6 @@ ul{
 
                 .linksbx2>a{
 
-                    padding-top: 2.7%;
                     padding-left: 3%;
                     width: fit-content;
 
@@ -461,7 +461,7 @@ ul{
 
                         display: flex;
                         flex-direction: column;
-                        border: 3px solid rgb(255, 245, 245);
+                        outline: 3px solid rgb(255, 245, 245);
                         border-radius: 15px;
                         background-color: white;
                         padding: 2%;
@@ -473,8 +473,8 @@ ul{
 
                     .ft:hover{
 
-                        border: 8px solid rgb(255, 241, 178);
-                        transition: border 0.5s ease, opacity 0.5s ease;
+                        outline: 8px solid rgb(255, 241, 178);
+                        transition: outline 0.5s ease, opacity 0.5s ease;
                         
                     }
 
@@ -507,8 +507,16 @@ ul{
 
                         width: 15vw;
                         height: 4vh;
-                        background-color: rgb(50, 107, 161);
+                        background-color: rgb(48, 138, 222);
                         border-radius: 15px;
+                        transition: background-color 0.5s ease;
+
+                    }
+
+                    .btn-soluc:hover{
+
+                        background-color: rgb(93, 170, 242);
+                        cursor: pointer;
 
                     }
 

@@ -67,7 +67,7 @@ class Lnks {
 
         echo '  
             <a href="'.$this->lnk_dv.'" target="_blank">'.$this->lnk_descr.'</a>
-
+            <br>
         ';
 
     }

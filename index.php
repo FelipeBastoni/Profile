@@ -580,7 +580,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
             <h3 id="Qm">Quem Somos</h3>
                     
-            <p>Somos uma Start-up atualmente focada em criar aplicações web e sistemas de gestão, pretendemos também abrangir áreas como automação e implantação de dispositivos Iot's, visamos sempre entregar um serviço de qualidade, bons resultados, otimas melhorias e satisfação a nossos clientes, conte conosco para o seu negócio ou necessidade!</p>
+            <p>Somos uma Start-up atualmente focada em criar aplicações web e sistemas de gestão, pretendemos também abrangir áreas como automação e implantação de dispositivos Iot's, visamos sempre entregar um serviço de qualidade, bons resultados, ótimas melhorias e satisfação a nossos clientes, conte conosco para o seu negócio ou necessidade!</p>
 
             <p>Nossa equipe é composta por...</p>
 
