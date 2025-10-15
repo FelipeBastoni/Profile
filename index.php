@@ -260,6 +260,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
     </div>
 
 
+
     <div class="contato" id="md" onclick="modal()">
 
         <div class="boxcntatc" onclick="event.stopPropagation()">
@@ -305,6 +306,42 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
     </div>
     
+
+
+    <div class="infoserv" id="info" onclick="modalinfo()">
+
+    
+        <div class="info">
+            
+
+            <div class="infotxt">
+
+                <p>Qualquercoisa</p>
+
+            </div>
+
+            <div class="infodisplaymain">
+
+                <div class="infodisplay">
+
+                    
+                </div>
+
+
+                <div class="infobottom">
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
 
 
 
@@ -555,8 +592,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                         <div class="btsolc">
 
-                            <button class="btn-soluc">Saiba mais</button>
-        
+                            <button class="btn-soluc" onclick="modalinfo()">Saiba mais</button>
+        <!-- Fazer uma div para subir -->
                         </div>
 
 

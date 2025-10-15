@@ -127,7 +127,7 @@ function qms(){
 
     }
 
-    document.getElementById('Qm').scrollIntoView({ behavior: 'smooth' })
+    document.getElementById('Qm').scrollIntoView({ behavior: 'smooth' });
 
     
 }
@@ -140,3 +140,12 @@ function dev(){
 
 
 }
+
+
+function modalinfo(){
+
+    document.getElementById('info').classList.toggle('atvinf');
+
+
+}
+   
