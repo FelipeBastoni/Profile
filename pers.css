@@ -557,7 +557,7 @@ ul{
                     }
 
                     .fchinfo{
-                        
+
                         background-color: #f1f6ff;
                         text-align: right;
                         padding: 2%;
@@ -580,14 +580,14 @@ ul{
 
                     .infodisplaymain{
 
-                        width: 40%;
+                        width: 30%;
                         height: 80vh;
 
                     }
                     
                     .infotxt{
 
-                        width: 60%;
+                        width: 70%;
                         height: 80vh;
                         border: 1px solid black;
                         padding-left: 1%;
