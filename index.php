@@ -310,13 +310,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
     <div class="infoserv" id="info" onclick="modalinfo()">
 
-    
+        <div class="fchinfo">
+            
+            <p class="pp">X</p>
+        
         <div class="info">
+        
+
+            
             
 
             <div class="infotxt">
 
-                <p>Qualquercoisa</p>
+                <p id="infotxt"></p>
 
             </div>
 
@@ -324,20 +330,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                 <div class="infodisplay">
 
+                    <p id="infodisplay"></p>
                     
                 </div>
 
 
                 <div class="infobottom">
 
-
+                    <p id="infobottom"></p>
 
                 </div>
 
 
             </div>
 
-
+        </div>
 
         </div>
 
@@ -504,7 +511,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                         <div class="btsolc">
 
-                            <button class="btn-soluc">Saiba mais</button>
+                            <button class="btn-soluc" onclick="modalinfo(0)">Saiba mais</button>
         
                         </div>
                     
@@ -547,7 +554,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                         <div class="btsolc">
 
-                            <button class="btn-soluc">Saiba Mais</button>
+                            <button class="btn-soluc" onclick="modalinfo(1)">Saiba Mais</button>
         
                         </div>
 
@@ -592,7 +599,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                         <div class="btsolc">
 
-                            <button class="btn-soluc" onclick="modalinfo()">Saiba mais</button>
+                            <button class="btn-soluc" onclick="modalinfo(2)">Saiba mais</button>
         <!-- Fazer uma div para subir -->
                         </div>
 

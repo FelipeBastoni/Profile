@@ -142,9 +142,18 @@ function dev(){
 }
 
 
-function modalinfo(){
+function modalinfo(n){
 
-    document.getElementById('info').classList.toggle('atvinf');
+    textos = ["Olá","Estou","E"];
+    displays = ["Tudo","Bem","Com"];
+    bottoms = ["Bom?","Sim!","Vc?"];
+
+    document.getElementById('info').classList.toggle('atvinf'); 
+
+    
+    document.getElementById('infotxt').innerText= textos[n];
+    document.getElementById('infodisplay').innerText=displays[n];
+    document.getElementById('infobottom').innerText=bottoms[n];
 
 
 }
