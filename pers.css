@@ -545,12 +545,12 @@ ul{
                     }
                     .pp:hover{cursor: pointer;}
 
-
                     .info{
 
                         display: flex;
                         background-color: #f1f6ff;
                         min-width: 70vw;
+                        max-width: 70vw;
                         min-height: 100vh;
                         left: 20%;
 
@@ -577,6 +577,11 @@ ul{
                         color: black;
                     }
 
+                    .txtinfo{
+
+                        text-align: left;
+
+                    }
 
                     .infodisplaymain{
 

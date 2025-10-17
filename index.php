@@ -322,7 +322,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
             <div class="infotxt">
 
-                <p id="infotxt"></p>
+                <p class="txtinfo"id="infotxt"></p>
 
             </div>
 
@@ -330,14 +330,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
                 <div class="infodisplay">
 
-                    <p id="infodisplay"></p>
+                    <p class="txtinfo" id="infodisplay"></p>
                     
                 </div>
 
 
                 <div class="infobottom">
 
-                    <p id="infobottom"></p>
+                    <p class="txtinfo" id="infobottom"></p>
 
                 </div>
 
