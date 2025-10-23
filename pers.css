@@ -11,6 +11,14 @@
 
 }
 
+.scroll{
+
+    overflow: hidden;
+
+}
+
+
+
 p, h2, h3, a, i{
 
     color: white;
@@ -522,7 +530,9 @@ ul{
 
                     .infoserv{
 
-                        display: none;
+                        display: flex;
+                        opacity: 0;
+                        visibility: hidden;
                         z-index: 500;
                         pointer-events: none;
                         top: 10%;
@@ -531,6 +541,9 @@ ul{
                         position: fixed;       
                         justify-content: center;
                         align-items: center;
+                        background-color: transparent;
+                        transition: background-color 0.5s ease;
+
                         
 
                     }
@@ -623,7 +636,10 @@ ul{
 
                     .atvinf{
 
-                        display: flex;
+                        opacity: 1;
+                        visibility: visible;
+                        background-color: #5c4040;
+                        pointer-events: all;
 
                     }
 

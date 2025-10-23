@@ -308,11 +308,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
     
 
 
-    <div class="infoserv" id="info" onclick="modalinfo()">
+    <div class="infoserv" id="info">
 
         <div class="fchinfo">
             
-            <p class="pp">X</p>
+            <p class="pp" onclick="modalinfo()">X</p>
         
         <div class="info">
         
@@ -600,7 +600,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
                         <div class="btsolc">
 
                             <button class="btn-soluc" onclick="modalinfo(2)">Saiba mais</button>
-        <!-- Fazer uma div para subir -->
+    
                         </div>
 
 

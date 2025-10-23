@@ -155,6 +155,8 @@ function modalinfo(n){
     document.getElementById('infodisplay').innerText=displays[n];
     document.getElementById('infobottom').innerText=bottoms[n];
 
+    document.body.classList.toggle('scroll'); 
+    
 
 }
    
