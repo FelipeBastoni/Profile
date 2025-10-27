@@ -144,13 +144,14 @@ function dev(){
 
 function modalinfo(n){
 
-    textos = ["Olá","Estou","E"];
-    displays = ["Tudo","Bem","Com"];
+    titulo = ["Sistemas de Gestão e Gerenciamento (ERP).","Plataforma Web Institucional e de Serviços Online.","Automações e Aplicações Embarcadas."];
+    textos = ["Qualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisa","Qualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisa","Qualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisaQualquer coisa"];
+    displays = ["","Bem","Com"];
     bottoms = ["Bom?","Sim!","Vc?"];
 
     document.getElementById('info').classList.toggle('atvinf'); 
 
-    
+    document.getElementById('txtttl').innerText= titulo[n];
     document.getElementById('infotxt').innerText= textos[n];
     document.getElementById('infodisplay').innerText=displays[n];
     document.getElementById('infobottom').innerText=bottoms[n];

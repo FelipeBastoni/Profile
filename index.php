@@ -322,6 +322,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
 
             <div class="infotxt">
 
+                
+                <div class="ttlinfo">
+
+                    <h2 class="txtttl" id="txtttl"></h2>
+
+                </div>
+
                 <p class="txtinfo"id="infotxt"></p>
 
             </div>
@@ -329,6 +336,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ){
             <div class="infodisplaymain">
 
                 <div class="infodisplay">
+
 
                     <p class="txtinfo" id="infodisplay"></p>
                     

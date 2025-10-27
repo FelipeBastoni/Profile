@@ -590,6 +590,20 @@ ul{
                         color: black;
                     }
 
+                    .ttlinfo{
+
+                        height: auto;
+                        margin-bottom: 2vh;
+
+                    }
+
+                    .txtttl{
+
+                        color: black;
+                        text-align: left;
+
+                    }
+
                     .txtinfo{
 
                         text-align: left;
