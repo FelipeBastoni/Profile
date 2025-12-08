@@ -208,7 +208,7 @@ p, h2, h3, a, i{
     .seletpers{
 
         display: flex;
-        padding-top: 6%;
+        padding-top: 3%;
         padding-bottom: 10%;
         padding-left: 10%;
         padding-right: 10%;
@@ -236,12 +236,14 @@ p, h2, h3, a, i{
 
     .con{
 
+        height: 55vh;
         display: block;
 
     }
 
     .alternov{
 
+        display: none;
         padding-top: 4%;
         padding-left: 2%;
         padding-right: 2%;
@@ -250,6 +252,7 @@ p, h2, h3, a, i{
 
     .alterllinks{
 
+        display: none;
         padding-top: 4%;
         padding-left: 2%;
         padding-right: 2%;
@@ -259,8 +262,16 @@ p, h2, h3, a, i{
     
     .alteralgo{
 
+        display: none;
         padding-top: 4%;
         padding-left: 2%;
         padding-right: 2%;
+
+    }
+
+
+    .ativ{
+
+        display: flex;
 
     }

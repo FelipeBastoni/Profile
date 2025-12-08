@@ -1,25 +1,4 @@
 
-<?php
-
-session_start();
-
-
-ini_set('display_errors', 0);  
-ini_set('log_errors', 1);      
-error_reporting(E_ALL);   
-
-
-
-    if (!isset($_SESSION['ID'])){
-
-        header("Location: index.php");
-        exit();
-
-    }
-
-?>
-
-
 
 <!DOCTYPE html>
 
@@ -31,7 +10,7 @@ error_reporting(E_ALL);
     <title>AltT</title>
 
     <link rel="stylesheet" href="destyle.css">
-    <script src="jvsc.js"></script>
+    <script src="../Front_Dev/animdev.js"></script>
 
 </head>
 
@@ -136,19 +115,19 @@ error_reporting(E_ALL);
 
     <div class='seletpers'>
 
-        <div class='selet'>
+        <div class='selet' onclick='editnov()'>
 
             <p>Editar Novidades</p>
 
         </div>
 
-        <div class='selet'>
+        <div class='selet' onclick='editplay()'>
 
             <p>Editar Links</p>
 
         </div>
 
-        <div class='selet'>
+        <div class='selet' onclick='editlink()'>
 
             <p>Editar Outro</p>
 
@@ -162,7 +141,131 @@ error_reporting(E_ALL);
     <div class="con">
 
 
+        <div class="alternov" id="alternov">
 
+
+            <h3>Editar Novidades:</h3>
+
+            <br>
+            <br>
+
+            <form action="procss.php" method='POST'>
+
+                <p>Coloque o título do seletor:</p>
+                <br>
+                <input name='titulo_p'>
+
+                <br>
+                <br>
+
+                <p>Coloque a descrição do seletor:</p>
+                <br>
+                <input name='descricao'>
+
+                <br>
+                <br>
+
+                <p>Coloque o título da exibição:</p>
+                <br>
+                <input name='titulo_t'>
+
+                <br>
+                <br>
+
+                <p>Coloque a descrição da exibição:</p>
+                <br>
+                <input name='texto'>
+
+                <br>
+                <br>
+
+                <p>Coloque a imagem da exibição:</p>
+                <br>
+                <input type="file" name='foto'>
+
+                <br>
+                <br>        
+                <br>        
+                <br>
+                <br>        
+
+                <input type="submit">
+
+            </form>
+
+
+
+        </div>
+
+
+
+        <div class="alterllinks" id="alterlink">
+
+            <h3>Editar Links Diversos</h3>
+
+            <br>
+            <br>
+
+            <form>
+
+                <p>Adicione a Descrição</p>
+                <input>
+
+                <br>
+                <br>    
+
+                <p>Adicione o Link</p>
+                <input>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <input type="submit">
+
+
+
+        </div>
+
+
+        <div class="alterllinks" id="alterplay">
+
+            <h3>Editar Playlists</h3>
+
+            <br>
+            <br>
+
+            <form>
+
+                <p>Adicione a Descrição</p>
+                <input>
+
+                <br>
+                <br>
+
+                <p>Adicione o Link</p>
+                <input>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <input type="submit">
+
+
+
+        </div>
+
+
+
+        <div class="alteralgo">
+
+            <h3>Ainda falta FAZER TUDO KKKKKKKK</h3>
+
+    
+        </div>
         <div class="alternov">
 
 
@@ -290,7 +393,13 @@ error_reporting(E_ALL);
         </div>
 
 
+
+
     </div>
 
 
 </div>
+
+
+
+<!-- Telas de alteração -->

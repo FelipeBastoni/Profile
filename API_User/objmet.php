@@ -1,6 +1,7 @@
 
 <?php
 
+// arquivo de objetos e tratamento dos mesmos
 
 class Novidade {
 
@@ -25,23 +26,21 @@ class Novidade {
         $this->numero = $numero;
         $this->id = $id;
 
-
     }
 
 
     public function novidades(){
 
-        echo' 
-                                        
-            <div class="opt" onclick="action(\'' . $this->id . '\',\'' . $this->ft . '\', \''.$this->txt.'\',  \''.$this->titulo_t.'\')">
+        return" 
 
-                <h2>'.$this->titulo_p.'</h2>
-                <p>'.$this->descricao.'</p>
+            <div class='opt' onclick=\"action('$this->id','$this->ft','$this->txt','$this->titulo_t')\">
+
+                <h2>$this->titulo_p</h2>
+                <p>$this->descricao</p>
 
             </div>
         
-        
-        ';
+        ";
 
     }
 
@@ -65,10 +64,11 @@ class Lnks {
 
     public function mostra(){
 
-        echo '  
-            <a href="'.$this->lnk_dv.'" target="_blank">'.$this->lnk_descr.'</a>
-            <br>
-        ';
+        return"  
+        
+            <a class='link' href='$this->lnk_dv' target='_blank'>$this->lnk_descr</a>
+        
+        ";
 
     }
 
@@ -77,22 +77,28 @@ class Lnks {
 
 function shownov($var){
 
+    $resp = [];
     foreach(array_reverse($var) as $item){
 
-        $item->novidades();
+        $resp[] = $item->novidades();
 
     }
+
+    return $resp;
 
 }
 
 
 function show($var){
 
+    $resplink = [];
     foreach($var as $item){
 
-        $item->mostra(); 
+        $resplink[] = $item->mostra(); 
 
     }
+
+    return $resplink;
 
 }
 
